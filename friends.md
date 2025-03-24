@@ -21,7 +21,7 @@ berikut teman - teman saya di kelas :
 13. [Janrico Maulana Sofyan](https://janricomaulanas.github.io/)
 14. [Muhammad Alfaraby](https://muhammadalfaraby06.github.io/)
 15. [Muhammad Alif Sidqi](https://alfsdqi.github.io/)
-16. [Amharul Azhan](https://amharul.github.io/)
+16. [Muhammad Amharul Azhan](https://amharul.github.io/)
 17. [Muhammad Nawar Khadafi](https://khadafimuhammadnawwar.github.io/)
 18. [Muhammad Raihan](https://mraihanads.github.io/)
 19. [Muhammad Zaky](https://muhzakyyy.github.io/)

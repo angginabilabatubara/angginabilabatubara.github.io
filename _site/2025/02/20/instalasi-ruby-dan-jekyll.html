@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instalasi Ruby dan Jekyll</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1> Instalasi Ruby dan Jekyll</h1>
+<p> 20 Feb 2025 - </p>
+
+<p>Penjelasan tentang Instalasi Ruby dan Jekyll</p>
+
+<p><img src="/assets/images/11zon_resized (3).jpg" alt="HTML link dan lists" /></p>
+
+<p>Sumber :revoupedia</p>
+
+<p>Berikut adalah panduan lengkap untuk instalasi dan konfigurasi Jekyll dengan GitHub Pages:</p>
+
+<h2 id="instalasi">Instalasi</h2>
+
+<h4 id="1instalasi-ruby">1.<strong>Instalasi Ruby</strong></h4>
+
+<p>Ruby adalah bahasa pemrograman yang digunakan oleh Jekyll. Berikut adalah langkah-langkah untuk menginstalnya:</p>
+
+<ol>
+  <li>Unduh Ruby Installer:
+    <ul>
+      <li>Kunjungi <a href="https://rubyinstaller.org/">RubyInstaller for Windows</a>.</li>
+      <li>Pilih versi Ruby terbaru yang tersedia dan unduh file <code class="language-plaintext highlighter-rouge">.exe</code>.</li>
+    </ul>
+  </li>
+  <li>Jalankan Installer:
+    <ul>
+      <li>Setelah diunduh, jalankan installer Ruby dan pastikan untuk mencentang opsi “Add Ruby executables to your PATH”.</li>
+      <li>Ikuti langkah-langkah hingga instalasi selesai.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>2.<strong>Instalasi Jekyll</strong></p>
+
+<p>Setelah Ruby terinstal, langkah selanjutnya adalah menginstal Jekyll dan Bundler (untuk mengelola dependensi Ruby).</p>
+
+<p>a. Menginstal Jekyll dan Bundler</p>
+
+<p>Instal Bundler:</p>
+<ul>
+  <li>Bundler digunakan untuk mengelola dependensi Ruby. Instal Bundler terlebih dahulu dengan perintah:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div>    </div>
+    <p>Instal Jekyll:</p>
+  </li>
+  <li>Setelah Bundler terinstal, kamu bisa menginstal Jekyll dengan menjalankan perintah:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>b. Verifikasi Instalasi Jekyll</p>
+
+<p>Untuk memastikan bahwa Jekyll terinstal dengan benar, jalankan perintah berikut:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll -v
+</code></pre></div></div>
+<p>Jika instalasi berhasil, kamu akan melihat versi Jekyll yang terinstal.</p>
+
+<hr />
+<h2 id="konfigurasi-jekyll-dengan-github-pages">konfigurasi Jekyll dengan GitHub Pages</h2>
+
+<p>Berikut adalah panduan untuk membuat <strong>Personal Web</strong> menggunakan <strong>Jekyll</strong> dan <strong>GitHub Pages</strong>:</p>
+
+<h4 id="1-membuat-repository-github">1. Membuat Repository GitHub</h4>
+
+<p>Untuk meng-host situs Jekyll menggunakan GitHub Pages, kamu perlu membuat repository di GitHub. Ikuti langkah-langkah ini:</p>
+
+<ol>
+  <li><em>Buat Repository Baru di GitHub</em>:
+    <ul>
+      <li>Masuk ke <a href="https://github.com/">GitHub</a>.</li>
+      <li>Klik tombol <em>New</em> untuk membuat repository baru.</li>
+      <li>Beri nama repository dengan format username.github.io, misalnya anggi.github.io. Ini adalah nama domain untuk situsmu.</li>
+      <li>Pilih <em>public</em> dan jangan centang opsi untuk menambahkan README.</li>
+      <li>Klik <em>Create repository</em>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><em>Salin URL Repository</em>:
+Salin URL repository GitHub kamu, misalnya:</p>
+
+    <p>https://github.com/username/username.github.io</p>
+  </li>
+</ol>
+
+<h4 id="2-membuat-situs-jekyll-baru">2. Membuat Situs Jekyll Baru</h4>
+
+<p>Setelah repository GitHub dibuat, langkah berikutnya adalah membuat situs Jekyll secara lokal di komputer kamu.</p>
+
+<ol>
+  <li>
+    <p><em>Buat Situs Jekyll Baru</em>:
+Di terminal/command prompt, jalankan perintah berikut untuk membuat situs Jekyll baru:</p>
+
+    <p>jekyll new nama-repository</p>
+
+    <p>Gantilah nama-repository dengan nama yang sesuai. Pastikan folder situsmu sesuai dengan nama repository GitHub kamu nanti.</p>
+  </li>
+  <li>
+    <p><em>Pindah ke Direktori Situs</em>:
+Masuk ke folder situs Jekyll yang baru saja dibuat:</p>
+
+    <p>cd nama-repository</p>
+  </li>
+  <li>
+    <p><em>Verifikasi Situs Secara Lokal</em>:
+Jalankan situs secara lokal dengan perintah:</p>
+
+    <p>bundle exec jekyll serve</p>
+
+    <p>Situs akan berjalan di http://localhost:4000. Buka di browser untuk memastikan situs bisa ditampilkan.</p>
+  </li>
+</ol>
+
+<h4 id="3-menyambungkan-repository-github">3. Menyambungkan Repository GitHub</h4>
+
+<p>Sekarang, kita akan menyambungkan situs Jekyll yang baru dibuat ke repository GitHub agar bisa di-hosting di GitHub Pages.</p>
+
+<ol>
+  <li>
+    <p><em>Inisialisasi Git di Direktori Situs</em>:
+Jika belum, inisialisasi Git di folder situs Jekyll:</p>
+
+    <p>git init</p>
+  </li>
+  <li>
+    <p><em>Hubungkan Repository GitHub</em>:
+Menambahkan repository GitHub yang baru kamu buat sebagai remote:</p>
+
+    <p>git remote add origin https://github.com/username/username.github.io.git</p>
+  </li>
+  <li>
+    <p><em>Menambahkan dan Meng-commit File</em>:
+Tambahkan semua file ke staging area dan commit perubahan:</p>
+
+    <p>git add .
+git commit -m “Initial commit”</p>
+  </li>
+  <li>
+    <p><em>Push ke GitHub</em>:
+Kirimkan file yang sudah di-commit ke GitHub:</p>
+
+    <p>git push -u origin main</p>
+
+    <p>Jika kamu menggunakan branch master, gunakan perintah ini:</p>
+
+    <p>git push -u origin master</p>
+  </li>
+</ol>
+
+<h4 id="4-mengaktifkan-github-pages">4. Mengaktifkan GitHub Pages</h4>
+
+<p>Sekarang GitHub Pages harus diaktifkan untuk repository kamu.</p>
+
+<ol>
+  <li><em>Masuk ke Pengaturan Repository di GitHub</em>:
+    <ul>
+      <li>Buka halaman repository kamu di GitHub.</li>
+      <li>Klik tab <em>Settings</em> di bagian atas halaman.</li>
+    </ul>
+  </li>
+  <li><em>Aktifkan GitHub Pages</em>:
+    <ul>
+      <li>Di menu <em>Pages</em> (bagian bawah kiri), pilih <em>Source</em> dan pilih <em>main branch</em> (atau master jika kamu menggunakan branch itu).</li>
+      <li>Klik <em>Save</em>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><em>Selesai!</em>:
+GitHub akan memproses dan meng-host situs Jekyll kamu. Biasanya, situs akan tersedia di:</p>
+
+    <p>https://username.github.io</p>
+  </li>
+</ol>
+
+<h4 id="5-menyesuaikan-situs-jekyll">5. Menyesuaikan Situs Jekyll</h4>
+
+<p>Sekarang situs kamu sudah aktif, kamu bisa menyesuaikan situs dengan mengedit beberapa file.</p>
+
+<ol>
+  <li>
+    <p><em>Konfigurasi _config.yml</em>:
+Buka file _config.yml dan sesuaikan pengaturan situsmu, seperti nama, deskripsi, dan URL:</p>
+
+    <p>title: My Personal Web.</p>
+
+    <p>description: This is my personal website hosted on GitHub Pages.</p>
+
+    <p>url: “https://username.github.io”.</p>
+
+    <p>baseurl: “”.</p>
+  </li>
+  <li><em>Menambahkan Postingan Blog atau Halaman Statis</em>:
+    <ul>
+      <li>Untuk menambahkan postingan blog, buat file Markdown di folder _posts dengan format nama YYYY-MM-DD-nama-post.md.</li>
+      <li>Untuk halaman statis seperti “Tentang Saya” atau “Kontak”, buat file .md di direktori root situs, misalnya about.md.</li>
+    </ul>
+  </li>
+  <li>
+    <p><em>Menambahkan Tema Jekyll</em>:
+Kamu bisa memilih tema dari <a href="https://jekyllrb.com/docs/themes/">Jekyll Themes</a>, lalu menambahkannya ke file _config.yml. Contoh:
+yaml
+theme: jekyll-theme-cayman</p>
+  </li>
+  <li><em>Menambahkan Custom CSS dan JavaScript</em>:
+Kamu juga bisa menambahkan file CSS atau JavaScript untuk memperindah tampilan situs di folder assets/css dan assets/js.</li>
+</ol>
+
+<h4 id="6-update-situs-dan-push-ke-github">6. Update Situs dan Push ke GitHub</h4>
+
+<p>Setelah melakukan perubahan pada situs, seperti menambahkan postingan atau mengubah tema, kamu bisa memperbarui situs di GitHub.</p>
+
+<ol>
+  <li>
+    <p><em>Tambah dan Commit Perubahan</em>:
+Setelah melakukan perubahan, jalankan perintah:</p>
+
+    <p>git add .</p>
+
+    <p>git commit -m “Update site content”</p>
+  </li>
+  <li>
+    <p><em>Push Perubahan ke GitHub</em>:
+Kirimkan perubahan yang baru saja di-commit ke GitHub:</p>
+
+    <p>git push origin main</p>
+  </li>
+</ol>
+
+</body>
+</html>

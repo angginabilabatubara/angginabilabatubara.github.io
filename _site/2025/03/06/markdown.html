@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1> Markdown</h1>
+<p> 06 Mar 2025 - </p>
+
+<p>Penjelasan tentang Markdorn</p>
+
+<p><img src="/assets/images/11zon_resized (3).jpg" alt="HTML link dan lists" /></p>
+
+<p>Sumber :revoupedia</p>
+
+<h2 id="markdown">Markdown</h2>
+
+<p><strong>Markdown</strong> adalah bahasa markup ringan yang digunakan untuk memformat teks dalam bentuk yang mudah dibaca dan ditulis. Markdown dirancang untuk memungkinkan penulisan teks dengan cara yang lebih sederhana dibandingkan dengan HTML, tetapi tetap dapat menghasilkan konten yang terformat dengan baik, seperti heading, daftar, link, gambar, dan lain-lain.</p>
+
+<p>Markdown banyak digunakan di platform blogging, dokumentasi, dan pengelolaan konten karena kesederhanaannya, termasuk di platform seperti <strong>GitHub</strong>, <strong>Jekyll</strong>, dan banyak lainnya.</p>
+
+<h2 id="fitur-fitur-utama-dalam-markdown">Fitur-fitur Utama dalam Markdown</h2>
+
+<p>Berikut adalah beberapa fitur umum dan cara penggunaannya dalam Markdown:</p>
+
+<h4 id="1-heading-judul">1. <strong>Heading (Judul)</strong></h4>
+<p>Untuk membuat judul atau heading, kamu bisa menggunakan tanda pagar (<code class="language-plaintext highlighter-rouge">#</code>). Semakin banyak tanda pagar, semakin rendah tingkat heading-nya.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge"># Heading 1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">## Heading 2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">### Heading 3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">#### Heading 4</code></li>
+  <li><code class="language-plaintext highlighter-rouge">##### Heading 5</code></li>
+  <li><code class="language-plaintext highlighter-rouge">###### Heading 6</code></li>
+</ul>
+
+<p>Contoh:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Judul Utama</span>
+<span class="gu">## Subjudul</span>
+<span class="gu">### Sub-subjudul</span>
+</code></pre></div></div>
+
+<h4 id="2-teks-tebal-dan-miring">2. <strong>Teks Tebal dan Miring</strong></h4>
+<ul>
+  <li>Untuk membuat teks <strong>tebal</strong>, gunakan dua tanda bintang atau garis bawah di kedua sisi kata: <code class="language-plaintext highlighter-rouge">**teks tebal**</code> atau <code class="language-plaintext highlighter-rouge">__teks tebal__</code>.</li>
+  <li>Untuk membuat teks <em>miring</em>, gunakan satu tanda bintang atau garis bawah: <code class="language-plaintext highlighter-rouge">*teks miring*</code> atau <code class="language-plaintext highlighter-rouge">_teks miring_</code>.</li>
+</ul>
+
+<p>Contoh:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Teks Tebal**</span>
+<span class="ge">*TeX Miring*</span>
+</code></pre></div></div>
+
+<h4 id="3-daftar-list">3. <strong>Daftar (List)</strong></h4>
+
+<ul>
+  <li>
+    <p><strong>Daftar Tidak Terurut</strong>: Gunakan tanda bintang (<code class="language-plaintext highlighter-rouge">*</code>), tanda tambah (<code class="language-plaintext highlighter-rouge">+</code>), atau tanda minus (<code class="language-plaintext highlighter-rouge">-</code>).</p>
+
+    <p>Contoh:
+markdown</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2
+        <ul>
+          <li>Sub-item 1</li>
+          <li>Sub-item 2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Daftar Terurut</strong>: Gunakan angka diikuti dengan titik (misalnya <code class="language-plaintext highlighter-rouge">1.</code>, <code class="language-plaintext highlighter-rouge">2.</code>, dst.)</p>
+
+    <p>Contoh:</p>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> Item pertama
+<span class="p">2.</span> Item kedua
+<span class="p">   1.</span> Sub-item pertama
+<span class="p">   2.</span> Sub-item kedua
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="4-tautan-links">4. <strong>Tautan (Links)</strong></h4>
+
+<p>Untuk membuat tautan, gunakan format berikut:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">teks link</span><span class="p">](</span><span class="sx">URL</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Contoh:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="5-gambar">5. <strong>Gambar</strong></h4>
+<p>Untuk menyisipkan gambar, sintaksnya mirip dengan tautan, tetapi diawali dengan tanda seru (<code class="language-plaintext highlighter-rouge">!</code>):</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">alt text</span><span class="p">](</span><span class="sx">URL</span> gambar)
+</code></pre></div></div>
+
+<p>Contoh:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Logo GitHub</span><span class="p">](</span><span class="sx">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="6-kode-code">6. <strong>Kode (Code)</strong></h4>
+
+<ul>
+  <li>
+    <p><strong>Kode Inline</strong>: Gunakan satu backtick (<code class="language-plaintext highlighter-rouge">\</code>`) untuk menandai kode dalam teks.</p>
+
+    <p>Contoh:</p>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sb">`print("Hello World")`</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Blok Kode</strong>: Gunakan tiga backticks (```) sebelum dan setelah kode untuk membuat blok kode.</p>
+
+    <p>Contoh:</p>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div>    </div>
+    <p>def hello_world():
+    print(“Hello World”)</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="7-blockquote-kutipan">7. <strong>Blockquote (Kutipan)</strong></h4>
+<p>Untuk membuat kutipan, gunakan tanda lebih besar (<code class="language-plaintext highlighter-rouge">&gt;</code>) di awal baris:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; Ini adalah kutipan.</span>
+</code></pre></div></div>
+
+<h4 id="8-horizontal-line-garis-horizontal">8. <strong>Horizontal Line (Garis Horizontal)</strong></h4>
+<p>Untuk membuat garis horizontal, cukup gunakan tiga tanda minus (<code class="language-plaintext highlighter-rouge">---</code>), tanda bintang (<code class="language-plaintext highlighter-rouge">***</code>), atau tanda garis bawah (<code class="language-plaintext highlighter-rouge">___</code>):</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">---
+</span></code></pre></div></div>
+
+<h4 id="9-tabel">9. <strong>Tabel</strong></h4>
+<p>Markdown juga mendukung pembuatan tabel. Sintaks untuk membuat tabel adalah dengan menggunakan tanda pipe (<code class="language-plaintext highlighter-rouge">|</code>) dan tanda minus (<code class="language-plaintext highlighter-rouge">-</code>) untuk mendefinisikan baris dan kolom.</p>
+
+<p>Contoh:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Kolom 1 | Kolom 2 | Kolom 3 |
+|---------|---------|---------|
+| Data 1  | Data 2  | Data 3  |
+| Data 4  | Data 5  | Data 6  |
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="kelebihan-markdown">Kelebihan Markdown</h2>
+<ul>
+  <li><strong>Mudah Dibaca dan Ditulis</strong>: Markdown dirancang untuk dapat dibaca tanpa perlu mengeksekusi kode atau mengubah formatnya. Ini menjadikannya pilihan populer untuk penulisan konten.</li>
+  <li><strong>Portabilitas</strong>: Markdown dapat dengan mudah dikonversi ke format lain seperti HTML, PDF, dan lain-lain.</li>
+  <li><strong>Kompatibilitas</strong>: Markdown digunakan di banyak platform, termasuk GitHub, Jekyll, dan sistem manajemen konten lainnya.</li>
+</ul>
+
+<h2 id="penggunaan-markdown-di-github-dan-jekyll">Penggunaan Markdown di GitHub dan Jekyll</h2>
+<ul>
+  <li><strong>GitHub</strong>: Di GitHub, Markdown digunakan untuk membuat file <code class="language-plaintext highlighter-rouge">README.md</code> yang menjelaskan proyek atau dokumentasi lainnya.</li>
+  <li><strong>Jekyll</strong>: Di Jekyll, file Markdown (<code class="language-plaintext highlighter-rouge">.md</code>) digunakan untuk membuat halaman statis dan posting blog. Ketika Jekyll membangun situs, file <code class="language-plaintext highlighter-rouge">.md</code> dikonversi menjadi HTML.</li>
+</ul>
+
+<h2 id="contoh-penggunaan-markdown-di-jekyll">Contoh Penggunaan Markdown di Jekyll</h2>
+
+<p>Misalnya, jika kamu ingin membuat postingan blog di Jekyll, kamu bisa membuat file di folder <code class="language-plaintext highlighter-rouge">_posts</code> dengan format nama file seperti <code class="language-plaintext highlighter-rouge">2025-03-22-first-post.md</code>. Isi file tersebut bisa menggunakan sintaks Markdown.</p>
+
+<p>Contoh file <code class="language-plaintext highlighter-rouge">2025-03-22-first-post.md</code>:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Posting</span><span class="nv"> </span><span class="s">Pertama"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2025-03-22</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">jekyll update</span>
+<span class="nn">---</span>
+
+Ini adalah posting pertama saya di Jekyll! Berikut adalah beberapa format Markdown yang saya gunakan.
+
+<span class="gu">## Heading 2</span>
+Ini adalah teks biasa dengan <span class="gs">**teks tebal**</span> dan <span class="ge">*teks miring*</span>.
+<span class="p">
+-</span> Item pertama
+<span class="p">-</span> Item kedua
+
+<span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Setelah Jekyll membangunnya, file ini akan dikonversi menjadi HTML yang dapat dilihat di situs web.</p>
+
+<hr />
+
+<p>Markdown adalah cara yang cepat dan efisien untuk menulis konten terformat tanpa memerlukan banyak sintaks rumit, menjadikannya pilihan populer di dunia web.</p>
+
+</body>
+</html>
