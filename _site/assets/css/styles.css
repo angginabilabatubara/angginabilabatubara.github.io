@@ -3,7 +3,7 @@
 }
 
 .last_name {
-  color: rgb(162, 214, 235);
+  color: rgb(243, 160, 233);
 }
 
 h2 {
@@ -11,35 +11,24 @@ h2 {
 }
 
 li a {
-  color: red;
+  color: rgba(248, 19, 183, 0.5);
   font-size: 20px;
 }
 
 li {
-  margin-top: 20px;
-  text-align: left;
+  background: #f8f9fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-li a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  background-color: #eabbe1;
-}
-
-li a:hover {
-  color: white;
-  font-size: 1.2em;
-  border-radius: 50px;
-  background-color: rgba(248, 19, 183, 0.5);
-  transition: 0.3s ease;
-}
-
-li p {
-    margin-top: 20px;
-    text-align: left;
-}
+ul li {
+  background: #f8f9fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;}
 
 nav a {
     color: #333;
