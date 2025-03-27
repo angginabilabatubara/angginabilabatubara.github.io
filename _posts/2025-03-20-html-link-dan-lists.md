@@ -3,6 +3,7 @@ layout: post
 title: "Html link and lists"
 ---
 
+
 Penjelasan tentang link dan list pada HTML
 
 ![HTML link dan lists](/assets/images/11zon_resized (3).jpg) 

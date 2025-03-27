@@ -3,7 +3,7 @@
 }
 
 .last_name {
-  color: rgb(243, 160, 233);
+  color: rgb(162, 214, 235);
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 }
 
 li a {
-  color: rgba(248, 19, 183, 0.5);
+  color: rgb(201, 59, 137);
   font-size: 20px;
 }
 
@@ -28,21 +28,28 @@ ul li {
   margin: 5px 0;
   padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s;}
+  transition: background-color 0.3s;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: left;
+}
 
 nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: #ddd;
+  color: rgb(174, 85, 132);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgb(234, 228, 231);
 }
 
 nav a:hover {
-    color: white;
-    font-size: 1.2em;
-    border-radius: 50px;
-    background-color: rgba(248, 19, 183, 0.5);
-    transition: 0.3s ease;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 50px;
+  background-color: rgb(202, 168, 187);
+  transition: 0.3s ease;
 }
+
 /*# sourceMappingURL=styles.css.map */
