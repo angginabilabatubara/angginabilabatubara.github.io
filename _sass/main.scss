@@ -1,49 +1,57 @@
 .current {
-    color:rgb(201, 59, 137);
+    color:rgb(24, 9, 18);
 }
 .last_name{
-    color:rgb(162, 214, 235);
+    color: #c94f7c;
 }
 h2{
     color:red;
 }
-li a{
-    color:rgb(201, 59, 137);
-    font-size: 20px;
+li a {
+    color: #c94f7c;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-li {
-    background: #f8f9fa;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    
-}
-ul li {
-    background: #f8f9fa;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;}
 
-    nav {
-        margin-top: 20px;
-        text-align: left;
-    }
-    
-    nav a {
-        color:rgb(174, 85, 132);
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 50px;
-        background-color: rgb(234, 228, 231);
-    }
-    
-    nav a:hover {
-        color: white;
-        font-size: 1.2em;
-        border-radius: 50px;
-        background-color: rgb(202, 168, 187);
-        transition: 0.3s ease;
-    }
+li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 16px 20px;
+    border: 1px solid #f7c2d4;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f5eff1;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(234, 229, 230, 0.2);
+}
+
+nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+nav a {
+    background-color: white;
+    color: #ad3f73;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #f8b6cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e57399;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(229, 115, 153, 0.3);
+}
+
 
