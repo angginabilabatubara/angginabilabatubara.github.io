@@ -6,8 +6,28 @@
   color: #c94f7c;
 }
 
-h2 {
-  color: red;
+/* Navbar */
+nav {
+  background-color: #c94f7c;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 1.1em;
 }
 
 li a {
@@ -31,30 +51,6 @@ ul li:hover {
   background-color: #f5eff1;
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(234, 229, 230, 0.2);
-}
-
-nav {
-  margin-top: 40px;
-  text-align: center;
-}
-
-nav a {
-  background-color: white;
-  color: #ad3f73;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  border: 1px solid #f8b6cc;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #e57399;
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(229, 115, 153, 0.3);
 }
 
 /*# sourceMappingURL=styles.css.map */
