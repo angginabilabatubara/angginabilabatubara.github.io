@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Config.yml</title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Config.yml | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Config.yml" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang Config.yml" />
+<meta property="og:description" content="Penjelasan tentang Config.yml" />
+<link rel="canonical" href="http://localhost:4000/2025/04/17/confic.yml.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/17/confic.yml.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-17T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Config.yml" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-17T00:00:00+07:00","datePublished":"2025-04-17T00:00:00+07:00","description":"Penjelasan tentang Config.yml","headline":"Config.yml","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/17/confic.yml.html"},"url":"http://localhost:4000/2025/04/17/confic.yml.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1> Config.yml</h1>
+<p> 17 Apr 2025 - </p>
+
+<p>Penjelasan tentang Config.yml</p>
+
+<h2 id="apa-itu-_configyml-di-jekyll">Apa itu <code class="language-plaintext highlighter-rouge">_config.yml</code> di Jekyll?</h2>
+
+<p><code class="language-plaintext highlighter-rouge">_config.yml</code> adalah file konfigurasi utama dalam proyek Jekyll, yaitu platform pembuat situs statis berbasis Ruby. File ini digunakan untuk mengatur hampir semua aspek situs statis kamu, seperti:</p>
+
+<ul>
+  <li>Nama blog atau situs</li>
+  <li>Deskripsi</li>
+  <li>Tema yang digunakan</li>
+  <li>Plugin</li>
+  <li>Struktur URL</li>
+  <li>Metadata penulis, dll.</li>
+</ul>
+
+<hr />
+
+<p>Baik, Anggi Syaban Nabila! Berikut ini versi revisi dari penjelasan lengkap tentang <code class="language-plaintext highlighter-rouge">_config.yml</code> Jekyll yang menggunakan namamu sebagai contoh di dalam kontennya:</p>
+
+<hr />
+
+<h2 id="apa-itu-_configyml">Apa Itu <code class="language-plaintext highlighter-rouge">_config.yml</code>?</h2>
+
+<p>File <code class="language-plaintext highlighter-rouge">_config.yml</code> adalah <strong>jantung pengaturan</strong> dalam proyek Jekyll. Semua konfigurasi utama situs kamu — seperti nama situs, deskripsi, URL, hingga plugin yang digunakan — diatur melalui file ini. Jekyll akan membaca file ini setiap kali kamu membangun (build) situs statis.</p>
+
+<p>Karena menggunakan format <strong>YAML</strong>, file ini sangat mudah dibaca dan ditulis. Formatnya sederhana, namun fleksibel untuk berbagai kebutuhan.</p>
+
+<hr />
+
+<h2 id="lokasi-file">Lokasi File</h2>
+
+<p>File <code class="language-plaintext highlighter-rouge">_config.yml</code> diletakkan di <strong>root direktori proyek Jekyll</strong>, bersama file seperti <code class="language-plaintext highlighter-rouge">index.md</code> dan folder <code class="language-plaintext highlighter-rouge">_posts/</code>.</p>
+
+<hr />
+
+<h2 id="struktur-dasar-_configyml">Struktur Dasar <code class="language-plaintext highlighter-rouge">_config.yml</code></h2>
+
+<p>Contoh pengaturan awal untuk blog pribadi milik Anggi:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Anggi Syaban Nabila's Blog</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Catatan pribadi dan perjalanan belajar</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://angginabilabatubara.github.io/"</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># kosong jika situs tidak di dalam sub-folder</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+</code></pre></div></div>
+
+<h3 id="penjelasan">Penjelasan:</h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">title</code></strong>: Nama situs yang akan tampil di browser atau halaman utama.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">description</code></strong>: Deskripsi singkat untuk SEO dan identitas blog.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">url</code></strong>: Alamat utama blog kamu di GitHub Pages.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">baseurl</code></strong>: Diisi jika situs kamu berada dalam subfolder (kosong jika tidak).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">theme</code></strong>: Tema yang digunakan, seperti <code class="language-plaintext highlighter-rouge">minima</code>, <code class="language-plaintext highlighter-rouge">jekyll-theme-cayman</code>, dsb.</li>
+</ul>
+
+<hr />
+
+<h2 id="menambahkan-plugin">Menambahkan Plugin</h2>
+
+<p>Untuk memperluas fitur situs, kamu bisa menambahkan plugin:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<h3 id="contoh-kegunaannya">Contoh kegunaannya:</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">jekyll-feed</code>: Menyediakan RSS feed otomatis.</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code>: Mengelola metadata SEO otomatis.</li>
+</ul>
+
+<hr />
+
+<h2 id="konfigurasi-tambahan">Konfigurasi Tambahan</h2>
+
+<p>Tambahan konfigurasi yang sering digunakan:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Anggi Syaban Nabila</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">anggisyabannabilaagmail.com</span>
+
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/:title/</span>
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">5</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/page:num"</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+</code></pre></div></div>
+
+<h3 id="penjelasan-1">Penjelasan:</h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">author</code></strong>: Identitas penulis yang bisa ditampilkan di halaman blog.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">permalink</code></strong>: Struktur URL untuk postingan (misal: <code class="language-plaintext highlighter-rouge">/judul-posting/</code>).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">paginate</code></strong>: Jumlah postingan per halaman jika menggunakan pagination.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">markdown</code></strong>: Mesin konversi Markdown, <code class="language-plaintext highlighter-rouge">kramdown</code> adalah default Jekyll.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">highlighter</code></strong>: Untuk menyoroti kode program (<code class="language-plaintext highlighter-rouge">rouge</code> adalah defaultnya).</li>
+</ul>
+
+<hr />
+
+<h2 id="variabel-kustom">Variabel Kustom</h2>
+
+<p>Kamu juga bisa membuat variabel sendiri:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">social</span><span class="pi">:</span>
+  <span class="na">github</span><span class="pi">:</span> <span class="s">https://github.com/anggisyaban</span>
+  <span class="na">instagram</span><span class="pi">:</span> <span class="s">https://instagram.com/anggisyaban</span>
+</code></pre></div></div>
+
+<p>Lalu dipanggil di layout:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href=""&gt;GitHub&lt;/a&gt;
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="mode-build-multi-konfigurasi">Mode Build Multi-Konfigurasi</h2>
+
+<p>Untuk keperluan produksi dan pengembangan:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build <span class="nt">--config</span> _config.yml,_config-dev.yml
+</code></pre></div></div>
+
+<p>Ini memungkinkan kamu memisahkan konfigurasi untuk testing dan produksi.</p>
+
+<hr />
+
+<h2 id="tips-dan-catatan">Tips dan Catatan</h2>
+
+<ul>
+  <li>YAML sensitif terhadap spasi: gunakan 2 spasi, jangan tab.</li>
+  <li>Gunakan <code class="language-plaintext highlighter-rouge">#</code> untuk komentar.</li>
+  <li>Hindari kutip ganda atau kutip tunggal kecuali diperlukan.</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>File <code class="language-plaintext highlighter-rouge">_config.yml</code> memudahkan kamu mengelola blog statis Jekyll secara fleksibel dan efisien. Dengan satu file ini, kamu bisa mengatur tampilan, metadata, struktur URL, plugin, hingga info pribadi seperti nama dan akun media sosial.</p>
+
+<p>Jadi, bagi kamu yang sedang membangun blog dengan Jekyll seperti Anggi Syaban Nabila, memahami <code class="language-plaintext highlighter-rouge">_config.yml</code> adalah langkah awal untuk membentuk situs pribadi yang rapi, terstruktur, dan profesional.
+ n</p>
+
+</body>
+</html>

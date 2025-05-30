@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> SweetAlert </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SweetAlert | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SweetAlert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang SweetAlert" />
+<meta property="og:description" content="penjelasan tentang SweetAlert" />
+<link rel="canonical" href="http://localhost:4000/2025/05/14/Sweet-Alert.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/14/Sweet-Alert.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-14T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SweetAlert" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-14T00:00:00+07:00","datePublished":"2025-05-14T00:00:00+07:00","description":"penjelasan tentang SweetAlert","headline":"SweetAlert","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/14/Sweet-Alert.html"},"url":"http://localhost:4000/2025/05/14/Sweet-Alert.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1>  SweetAlert </h1>
+<p> 14 May 2025 - </p>
+
+<p>penjelasan tentang SweetAlert</p>
+
+<h2 id="pengertian-sweetalert"><strong>Pengertian SweetAlert</strong></h2>
+
+<p><strong>SweetAlert</strong> adalah library JavaScript open-source yang dirancang untuk menggantikan fungsi alert bawaan dari browser (<code class="language-plaintext highlighter-rouge">window.alert()</code>), dengan tampilan yang jauh lebih menarik, modern, dan mudah disesuaikan. SweetAlert digunakan untuk membuat popup alert atau dialog box yang interaktif, seperti konfirmasi, notifikasi, peringatan, atau bahkan input dari pengguna.</p>
+
+<p>Alert standar dari browser cenderung sangat sederhana, tidak bisa dikustomisasi tampilannya, dan kurang ramah pengguna. SweetAlert hadir untuk mengatasi hal ini dengan menyediakan antarmuka grafis yang lebih baik dan responsif.</p>
+
+<h2 id="tujuan-dan-kegunaan-sweetalert"><strong>Tujuan dan Kegunaan SweetAlert</strong></h2>
+
+<p>SweetAlert sangat berguna untuk:</p>
+
+<ul>
+  <li>Menampilkan pesan sukses atau error</li>
+  <li>Mengkonfirmasi tindakan penting seperti penghapusan data</li>
+  <li>Menyampaikan peringatan penting ke pengguna</li>
+  <li>Menerima input pengguna (khusus SweetAlert2)</li>
+  <li>Membuat antarmuka pengguna lebih elegan</li>
+</ul>
+
+<p>Library ini banyak digunakan dalam pengembangan aplikasi berbasis web, baik itu menggunakan JavaScript murni maupun framework seperti Vue.js, React.js, dan Laravel.</p>
+
+<h2 id="perbandingan-sweetalert-vs-sweetalert2"><strong>Perbandingan: SweetAlert vs SweetAlert2</strong></h2>
+
+<p>SweetAlert versi pertama sudah cukup bagus, namun SweetAlert2 hadir sebagai peningkatan besar-besaran dengan dukungan fitur yang jauh lebih kaya. Berikut tabel perbandingannya:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fitur</th>
+      <th>SweetAlert (v1)</th>
+      <th>SweetAlert2 (v2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kustomisasi tombol</td>
+      <td>Terbatas</td>
+      <td>Sangat fleksibel</td>
+    </tr>
+    <tr>
+      <td>Dukungan form/input</td>
+      <td>Tidak ada</td>
+      <td>Ada (teks, angka, pilihan, dll)</td>
+    </tr>
+    <tr>
+      <td>Tampilan</td>
+      <td>Bagus</td>
+      <td>Lebih modern &amp; responsif</td>
+    </tr>
+    <tr>
+      <td>Dokumentasi</td>
+      <td>Terbatas</td>
+      <td>Lengkap dan aktif dikembangkan</td>
+    </tr>
+    <tr>
+      <td>Animasi</td>
+      <td>Dasar</td>
+      <td>Lebih halus dan menarik</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Rekomendasi:Gunakan SweetAlert2 untuk pengembangan modern, kecuali kamu hanya butuh fitur paling dasar.</p>
+</blockquote>
+
+<h2 id="cara-menggunakan-sweetalert"><strong>Cara Menggunakan SweetAlert</strong></h2>
+
+<h3 id="1-instalasi-library">1. <strong>Instalasi Library</strong></h3>
+
+<h4 id="a-melalui-cdn-untuk-html-biasa">a. Melalui CDN (untuk HTML biasa)</h4>
+
+<p><strong>SweetAlert v1:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/sweetalert/dist/sweetalert.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><strong>SweetAlert2:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/sweetalert2@11"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Letakkan sebelum <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> untuk performa lebih baik.</p>
+
+<h4 id="b-menggunakan-npm-untuk-proyek-dengan-nodejs">b. Menggunakan NPM (untuk proyek dengan Node.js)</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>sweetalert      <span class="c"># Versi lama</span>
+npm <span class="nb">install </span>sweetalert2     <span class="c"># Versi terbaru</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="2-contoh-penggunaan-dasar">2. <strong>Contoh Penggunaan Dasar</strong></h3>
+
+<h4 id="sweetalert-v1">SweetAlert (v1)</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">swal</span><span class="p">(</span><span class="dl">"</span><span class="s2">Berhasil!</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Data telah disimpan!</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">success</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="sweetalert2-v2">SweetAlert2 (v2)</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Berhasil!</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Data telah disimpan dengan aman.</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">icon</span><span class="p">:</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">confirmButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">OK</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="fitur-fitur-sweetalert2"><strong>Fitur-Fitur SweetAlert2</strong></h2>
+
+<p>Berikut fitur-fitur andalan dari SweetAlert2:</p>
+
+<h3 id="1-jenis-ikon">1. <strong>Jenis Ikon</strong></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">success</code> – Untuk pesan sukses</li>
+  <li><code class="language-plaintext highlighter-rouge">error</code> – Untuk kesalahan</li>
+  <li><code class="language-plaintext highlighter-rouge">warning</code> – Untuk peringatan</li>
+  <li><code class="language-plaintext highlighter-rouge">info</code> – Untuk informasi</li>
+  <li><code class="language-plaintext highlighter-rouge">question</code> – Untuk pertanyaan</li>
+</ul>
+
+<h3 id="2-kustomisasi-tombol">2. <strong>Kustomisasi Tombol</strong></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Yakin ingin hapus?</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">icon</span><span class="p">:</span> <span class="dl">'</span><span class="s1">warning</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">showCancelButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">confirmButtonColor</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#d33</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">cancelButtonColor</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#3085d6</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">confirmButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ya, hapus!</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">cancelButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Batal</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="3-timer-otomatis-auto-close">3. <strong>Timer Otomatis (Auto Close)</strong></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Auto close dalam 3 detik</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Popup ini akan hilang otomatis.</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">timer</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span>
+  <span class="na">showConfirmButton</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="4-input-form">4. <strong>Input Form</strong></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Masukkan nama kamu</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">input</span><span class="p">:</span> <span class="dl">'</span><span class="s1">text</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">inputLabel</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Nama Lengkap</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">showCancelButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">inputValidator</span><span class="p">:</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="dl">'</span><span class="s1">Nama tidak boleh kosong!</span><span class="dl">'</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="5-callback-setelah-konfirmasi">5. <strong>Callback Setelah Konfirmasi</strong></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Yakin?</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">text</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Data tidak dapat dikembalikan!</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">icon</span><span class="p">:</span> <span class="dl">'</span><span class="s1">warning</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">showCancelButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">confirmButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hapus</span><span class="dl">'</span>
+<span class="p">}).</span><span class="nf">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if </span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">isConfirmed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Lakukan aksi jika dikonfirmasi</span>
+    <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">(</span><span class="dl">'</span><span class="s1">Terhapus!</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Data berhasil dihapus.</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="integrasi-dengan-framework"><strong>Integrasi dengan Framework</strong></h2>
+
+<h3 id="a-dengan-jquery">a. <strong>Dengan jQuery</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"hapusBtn"</span><span class="nt">&gt;</span>Hapus<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="nf">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#hapusBtn</span><span class="dl">'</span><span class="p">).</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nf">function </span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">(</span><span class="dl">'</span><span class="s1">Berhasil!</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Tombol berhasil ditekan.</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="b-dengan-react">b. <strong>Dengan React</strong></h3>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Swal</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">sweetalert2</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nf">handleClick</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello React!</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Popup dari SweetAlert2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">info</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="c-dengan-laravel-blade--js">c. <strong>Dengan Laravel (Blade + JS)</strong></h3>
+
+<pre><code class="language-blade">&lt;a href="#" onclick="konfirmasiHapus()"&gt;Hapus Data&lt;/a&gt;
+
+&lt;script&gt;
+function konfirmasiHapus() {
+  Swal.fire({
+    title: 'Hapus data ini?',
+    text: "Data akan hilang selamanya!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Ya, hapus!',
+    cancelButtonText: 'Batal'
+  }).then((result) =&gt; {
+    if (result.isConfirmed) {
+      window.location.href = "/delete-data";
+    }
+  });
+}
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="tips-dan-best-practices"><strong>Tips dan Best Practices</strong></h2>
+
+<ol>
+  <li>Jangan terlalu sering menggunakan popup agar tidak mengganggu pengalaman pengguna.</li>
+  <li>Gunakan ikon dan warna sesuai konteks (contoh: merah untuk error).</li>
+  <li>Gunakan input validation saat menerima input dari pengguna.</li>
+  <li>Gunakan promise (<code class="language-plaintext highlighter-rouge">then</code>) untuk menangani hasil aksi pengguna.</li>
+  <li>**Selalu testing di semua browser utama agar tampilan tetap konsisten.</li>
+</ol>
+
+<h2 id="dokumentasi-resmi"><strong>Dokumentasi Resmi</strong></h2>
+
+<ul>
+  <li>SweetAlert v1: <a href="https://sweetalert.js.org">https://sweetalert.js.org</a></li>
+  <li>SweetAlert2: <a href="https://sweetalert2.github.io">https://sweetalert2.github.io</a></li>
+</ul>
+
+<h2 id="kesimpulan"><strong>Kesimpulan</strong></h2>
+
+<p><strong>SweetAlert</strong> adalah solusi modern untuk menampilkan popup alert yang lebih menarik, interaktif, dan mudah dikustomisasi dibandingkan dengan alert standar dari browser. Dengan tampilan yang elegan dan fungsionalitas yang luas, SweetAlert sangat cocok digunakan dalam berbagai proyek web untuk menampilkan pesan peringatan, notifikasi, maupun konfirmasi tindakan pengguna.</p>
+
+<p>Terdapat dua versi utama: SweetAlert (v1) dan SweetAlert2 (v2), di mana SweetAlert2 menjadi pilihan yang lebih unggul karena dukungan terhadap input form, kontrol tombol lebih fleksibel, animasi yang halus, serta dokumentasi yang lebih lengkap. SweetAlert2 juga sangat mudah diintegrasikan dengan berbagai framework modern seperti jQuery, React, dan Laravel.</p>
+
+<p>Penggunaan SweetAlert tidak hanya meningkatkan estetika halaman web, tetapi juga meningkatkan user experience (UX)** secara keseluruhan. Namun, penting untuk menggunakannya secara bijak agar tidak membanjiri pengguna dengan terlalu banyak popup.</p>
+
+</body>
+</html>

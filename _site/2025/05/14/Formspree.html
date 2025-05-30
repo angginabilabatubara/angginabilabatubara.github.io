@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Formspree </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Formspree | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Formspree" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang Formspree" />
+<meta property="og:description" content="penjelasan tentang Formspree" />
+<link rel="canonical" href="http://localhost:4000/2025/05/14/Formspree.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/14/Formspree.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-14T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Formspree" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-14T00:00:00+07:00","datePublished":"2025-05-14T00:00:00+07:00","description":"penjelasan tentang Formspree","headline":"Formspree","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/14/Formspree.html"},"url":"http://localhost:4000/2025/05/14/Formspree.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1>  Formspree </h1>
+<p> 14 May 2025 - </p>
+
+<p>penjelasan tentang Formspree</p>
+
+<h2 id="apa-itu-formspree"><strong>Apa itu Formspree</strong></h2>
+<p>Formspree adalah layanan pihak ketiga berbasis web yang memungkinkan pengembang dan desainer web menghubungkan formulir HTML di website mereka dengan alamat email tanpa memerlukan kode backend (seperti PHP, Node.js, Python, dsb.).</p>
+
+<p>Dengan Formspree, kamu bisa membuat formulir kontak, formulir pendaftaran, dan berbagai jenis form lainnya yang secara otomatis mengirimkan datanya langsung ke email kamu. Ini sangat berguna terutama bagi:</p>
+
+<p>Pengembang yang menggunakan situs statis (HTML/CSS/JS saja)</p>
+
+<p>Website personal, portofolio, blog</p>
+
+<p>Website yang dihosting di GitHub Pages, Netlify, atau Vercel</p>
+
+<p>Proyek yang tidak memiliki server backend</p>
+
+<h2 id="tujuan-dan-kegunaan-formspree"><strong>Tujuan dan Kegunaan Formspree</strong></h2>
+
+<p>Formspree dibuat untuk <strong>menyederhanakan proses pengelolaan formulir di web</strong>, khususnya untuk website yang tidak menggunakan backend. Tujuannya adalah:</p>
+
+<ul>
+  <li>Menghindari kerumitan membuat API atau script PHP</li>
+  <li>Memberikan solusi yang cepat dan mudah dipasang</li>
+  <li>Menyediakan antarmuka dan keamanan untuk menerima data dari pengguna</li>
+</ul>
+
+<p>Dengan Formspree, kamu bisa:</p>
+
+<ul>
+  <li>Menerima pesan dari formulir kontak</li>
+  <li>Mendapat notifikasi email setiap kali form dikirim</li>
+  <li>Menganalisis statistik pengisian form</li>
+  <li>Mengatur validasi dan keamanan dari serangan spam</li>
+</ul>
+
+<h2 id="bagaimana-cara-kerja-formspree"><strong>Bagaimana Cara Kerja Formspree?</strong></h2>
+
+<ol>
+  <li>Kamu <strong>membuat form HTML</strong> di halaman web kamu seperti biasa.</li>
+  <li>Kamu <strong>mengubah atribut <code class="language-plaintext highlighter-rouge">action</code></strong> pada tag <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> menjadi URL endpoint yang diberikan oleh Formspree.</li>
+  <li>
+    <p>Ketika pengunjung mengisi formulir dan mengirimnya:</p>
+
+    <ul>
+      <li>Data akan dikirim ke server Formspree.</li>
+      <li>Formspree akan <strong>memvalidasi</strong> data dan email penerima.</li>
+      <li>Jika valid, <strong>email akan dikirimkan ke kamu</strong> berisi isi form tersebut.</li>
+      <li>Kamu bisa menambahkan opsi redirect ke halaman terima kasih.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="contoh-form-html-sederhana-menggunakan-formspree"><strong>Contoh Form HTML Sederhana Menggunakan Formspree</strong></h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"https://formspree.io/f/mnqyljkd"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Nama:
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Email:
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Pesan:
+    <span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"message"</span> <span class="na">required</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Kirim<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p>URL <code class="language-plaintext highlighter-rouge">https://formspree.io/f/mnqyljkd</code> adalah endpoint yang kamu dapatkan setelah membuat akun Formspree dan membuat form baru. Ganti dengan URL-mu sendiri.</p>
+
+<h2 id="fitur-fitur-utama-formspree"><strong>Fitur-Fitur Utama Formspree</strong></h2>
+
+<h3 id="1--pengiriman-data-via-email">1.  <strong>Pengiriman Data via Email</strong></h3>
+
+<p>Setiap kali formulir dikirim, kamu akan langsung menerima email yang berisi informasi dari form pengguna.</p>
+
+<h3 id="2--validasi-otomatis">2.  <strong>Validasi Otomatis</strong></h3>
+
+<p>Formspree mendukung validasi HTML5 (seperti <code class="language-plaintext highlighter-rouge">required</code>, <code class="language-plaintext highlighter-rouge">email</code>) dan bisa ditambahkan validator di sisi server.</p>
+
+<h3 id="3--redirect-setelah-submit">3.  <strong>Redirect Setelah Submit</strong></h3>
+
+<p>Kamu bisa mengatur agar setelah pengguna mengisi form, mereka akan diarahkan ke halaman tertentu, misalnya <code class="language-plaintext highlighter-rouge">thank-you.html</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"_redirect"</span> <span class="na">value=</span><span class="s">"https://namadomainmu.com/terima-kasih.html"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="4--proteksi-spam">4.  <strong>Proteksi Spam</strong></h3>
+
+<ul>
+  <li>Mendukung honeypot (form tersembunyi untuk mendeteksi bot)</li>
+  <li>Mendukung Google reCAPTCHA (pada versi Pro)</li>
+  <li>Pembatasan IP jika diperlukan</li>
+</ul>
+
+<h3 id="5--custom-email-template">5.  <strong>Custom Email Template</strong></h3>
+
+<p>Kamu bisa mengatur seperti apa email yang dikirim ke kamu—menyesuaikan dengan kebutuhan.</p>
+
+<h3 id="6--analytics-dan-statistik">6.  <strong>Analytics dan Statistik</strong></h3>
+
+<p>Fitur ini tersedia di versi Pro, memungkinkan kamu melihat performa form: berapa kali dikirim, IP pengirim, waktu pengiriman, dsb.</p>
+
+<h3 id="7--integrasi-api--webhook">7.  <strong>Integrasi API &amp; Webhook</strong></h3>
+
+<p>Kamu bisa mengirim data form langsung ke Slack, Zapier, Google Sheets, atau layanan backend melalui webhook.</p>
+
+<h2 id="langkah-langkah-menggunakan-formspree"><strong>Langkah-Langkah Menggunakan Formspree</strong></h2>
+
+<ol>
+  <li>Daftar akun di <a href="https://formspree.io">https://formspree.io</a></li>
+  <li>Buat project dan form baru (akan diberikan link endpoint)
+3.Salin link endpoint an gunakan pada atribut <code class="language-plaintext highlighter-rouge">action</code> di form HTML kamu</li>
+  <li>Pasang validasi tambahan (opsional)</li>
+  <li>Coba kirim form dan cek email</li>
+  <li>Tambahkan redirect atau pesan sukses sesuai kebutuhan</li>
+  <li>(Opsional) <strong>Integrasikan reCAPTCHA atau webhook</strong></li>
+</ol>
+
+<h2 id="tips-penggunaan-formspree-yang-efektif"><strong>Tips Penggunaan Formspree yang Efektif</strong></h2>
+
+<ul>
+  <li>Gunakan <strong>validasi HTML5</strong> seperti <code class="language-plaintext highlighter-rouge">required</code>, <code class="language-plaintext highlighter-rouge">pattern</code>, <code class="language-plaintext highlighter-rouge">type=email</code>, dll.</li>
+  <li>Tambahkan <strong>honeypot</strong> field tersembunyi untuk menangkal spam bot.</li>
+  <li>
+    <p>Tambahkan <strong><code class="language-plaintext highlighter-rouge">_replyto</code></strong> untuk membalas langsung ke pengirim melalui email.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"_replyto"</span><span class="nt">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Buat halaman <code class="language-plaintext highlighter-rouge">terima-kasih.html</code> sebagai redirect setelah pengiriman sukses.</li>
+</ul>
+
+<h2 id="contoh-form-lebih-lengkap"><strong>Contoh Form Lebih Lengkap</strong></h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"https://formspree.io/f/mnqyljkd"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Nama Lengkap:
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nama"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Email Aktif:
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"_replyto"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Topik:
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"topik"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"dukungan"</span><span class="nt">&gt;</span>Dukungan<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"kritik"</span><span class="nt">&gt;</span>Kritik<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"saran"</span><span class="nt">&gt;</span>Saran<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>Pesan:
+    <span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"pesan"</span> <span class="na">required</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"_subject"</span> <span class="na">value=</span><span class="s">"Pesan dari Website!"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"_redirect"</span> <span class="na">value=</span><span class="s">"https://domainkamu.com/terima-kasih.html"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Kirim Sekarang<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<h2 id="dokumentasi-dan-bantuan"><strong>Dokumentasi dan Bantuan</strong></h2>
+
+<ul>
+  <li>Situs Resmi: <a href="https://formspree.io">https://formspree.io</a></li>
+  <li>Dokumentasi lengkap: <a href="https://formspree.io/docs">https://formspree.io/docs</a></li>
+  <li>GitHub repository: <a href="https://github.com/formspree/formspree">https://github.com/formspree/formspree</a></li>
+  <li>Dukungan email &amp; komunitas tersedia untuk pengguna Pro</li>
+</ul>
+
+<h2 id="kesimpulan"><strong>Kesimpulan</strong></h2>
+
+<p><strong>Formspree</strong> adalah solusi modern dan praktis untuk mengelola formulir web tanpa backend. Sangat cocok bagi pengguna situs statis atau pengembang yang tidak ingin repot mengatur server. Dengan fitur seperti email otomatis, redirect, validasi, dan integrasi API/webhook, Formspree menjadikan pengelolaan form menjadi cepat, aman, dan profesional.</p>
+
+
+</body>
+</html>

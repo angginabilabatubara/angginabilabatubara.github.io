@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Web Design </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Responsive Web Design | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Responsive Web Design" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang Responsive Web Design" />
+<meta property="og:description" content="Penjelasan tentang Responsive Web Design" />
+<link rel="canonical" href="http://localhost:4000/2025/05/07/Responsive-Web-Design.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/07/Responsive-Web-Design.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-07T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Responsive Web Design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+07:00","datePublished":"2025-05-07T00:00:00+07:00","description":"Penjelasan tentang Responsive Web Design","headline":"Responsive Web Design","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/07/Responsive-Web-Design.html"},"url":"http://localhost:4000/2025/05/07/Responsive-Web-Design.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1>  Responsive Web Design </h1>
+<p> 07 May 2025 - </p>
+
+<p>Penjelasan tentang Responsive Web Design</p>
+
+<h2 id="apa-itu-responsive-web-design">Apa itu RESPONSIVE WEB DESIGN?</h2>
+
+<p><strong>Responsive Web Design (RWD)</strong> adalah <strong>pendekatan dalam pengembangan web</strong> yang membuat <strong>tampilan website otomatis menyesuaikan diri</strong> dengan ukuran layar dan perangkat pengaksesnya — seperti <strong>laptop, tablet, dan smartphone</strong> — tanpa kehilangan fungsionalitas atau kenyamanan tampilan.</p>
+
+<hr />
+
+<h2 id="tujuan--responsive-web-design">Tujuan  RESPONSIVE WEB DESIGN</h2>
+
+<ul>
+  <li>Memberikan <strong>pengalaman pengguna (User Experience)</strong> terbaik di berbagai perangkat.</li>
+  <li>Menghindari kebutuhan membuat versi web yang berbeda untuk desktop dan mobile.</li>
+  <li>Meningkatkan <strong>aksesibilitas</strong>, <strong>SEO (Search Engine Optimization)</strong>, dan <strong>kecepatan website</strong>.</li>
+</ul>
+
+<hr />
+
+<h2 id="unsur-unsur-penting-responsive-web-design">Unsur unsur penting RESPONSIVE WEB DESIGN</h2>
+
+<h3 id="1-fluid-grid-layout">1. <strong>Fluid Grid Layout</strong></h3>
+
+<p>Layout yang <strong>menggunakan persentase (%)</strong> bukan ukuran tetap (px) sehingga elemen menyesuaikan ukuran layar.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="2-flexible-images">2. <strong>Flexible Images</strong></h3>
+
+<p>Gambar akan otomatis <strong>mengecil atau membesar</strong> mengikuti ukuran wadahnya (container).</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="3-media-queries">3. <strong>Media Queries</strong></h3>
+
+<p>Fitur CSS untuk menerapkan gaya tertentu tergantung pada lebar layar atau jenis perangkat.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Untuk layar maksimal 768px (tablet &amp; HP) */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.sidebar</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.content</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="4-viewport-meta-tag">4. <strong>Viewport Meta Tag</strong></h3>
+
+<p>Digunakan di HTML agar browser mengetahui bagaimana mengatur skala dan ukuran halaman.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Tanpa ini, desain responsif tidak akan berfungsi dengan benar di perangkat mobile.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="contoh-struktur-html--css-responsive">contoh struktur HTML + CSS RESPONSIVE</h2>
+
+<h3 id="-html">🔹 HTML</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Responsive Web<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>Header<span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>Konten utama<span class="nt">&lt;/main&gt;</span>
+  <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"sidebar"</span><span class="nt">&gt;</span>Sidebar<span class="nt">&lt;/aside&gt;</span>
+  <span class="nt">&lt;footer&gt;</span>Footer<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h3 id="css">CSS</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">3</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+  <span class="py">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Responsive untuk layar kecil */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.sidebar</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="keuntungan-responsive-design">keuntungan RESPONSIVE DESIGN</h2>
+
+<p>Tampilan konsisten di semua perangkat
+ Meningkatkan pengalaman pengguna (UX)
+ SEO lebih baik (Google menyukai situs mobile-friendly)
+ Efisien dan mudah dikelola (satu situs untuk semua perangkat)
+ Lebih hemat biaya dan waktu</p>
+
+<hr />
+
+<h2 id="kesalahan-umum-dalam-responsive-design">kesalahan umum dalam RESPONSIVE DESIGN</h2>
+
+<ul>
+  <li>Tidak menggunakan viewport meta tag</li>
+  <li>Menggunakan ukuran tetap (px) untuk layout</li>
+  <li>Mengabaikan uji coba di perangkat nyata</li>
+  <li>Gambar tidak diatur agar fleksibel</li>
+  <li>Media queries terlalu sempit atau terlalu banyak</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p><strong>Responsive Web Design</strong> adalah prinsip penting dalam pengembangan web modern. Tujuannya adalah memastikan bahwa <strong>website tetap bagus, nyaman, dan fungsional</strong> saat dibuka di berbagai perangkat, mulai dari <strong>desktop, tablet, hingga smartphone</strong>.</p>
+
+<blockquote>
+  <p>Dengan menggunakan <strong>fluid layout</strong>, <strong>media queries</strong>, <strong>flexible images</strong>, dan <strong>viewport tag</strong>, kamu bisa membangun website yang <strong>adaptif dan profesional</strong>.</p>
+</blockquote>
+
+
+</body>
+</html>

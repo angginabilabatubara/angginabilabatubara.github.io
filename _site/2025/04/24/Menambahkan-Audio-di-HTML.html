@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menambahkan Audio di HTML</title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Menambahkan Audio di HTML | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Menambahkan Audio di HTML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang Menambahkan Audio di HTML" />
+<meta property="og:description" content="Penjelasan tentang Menambahkan Audio di HTML" />
+<link rel="canonical" href="http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-24T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Menambahkan Audio di HTML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"Penjelasan tentang Menambahkan Audio di HTML","headline":"Menambahkan Audio di HTML","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html"},"url":"http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1> Menambahkan Audio di HTML</h1>
+<p> 24 Apr 2025 - </p>
+
+<p>Penjelasan tentang Menambahkan Audio di HTML</p>
+
+<h1 id="cara-menambahkan-audio-di-html">Cara Menambahkan Audio di HTML</h1>
+
+<h2 id="tag-audio">Tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code></h2>
+
+<p>HTML menyediakan tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> khusus untuk memutar file suara seperti musik, efek suara, atau rekaman suara. Dengan tag ini, kamu bisa menyisipkan file audio ke dalam halaman web dan memberi kontrol kepada pengguna seperti tombol play, pause, dll.</p>
+
+<h3 id="contoh-dasar">Contoh Dasar:</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/nama-file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  Browser kamu tidak mendukung pemutar audio.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="penjelasan-atribut">Penjelasan Atribut:</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code></strong>: Tag utama untuk menampilkan pemutar audio.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">controls</code></strong>: Menampilkan kontrol standar (play, pause, volume).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code></strong>: Menunjukkan file audio yang ingin diputar.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">src</code></strong>: Lokasi file audio, bisa lokal atau URL.</li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">type</code></strong>: Tipe format file audio:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">audio/mpeg</code> untuk MP3</li>
+      <li><code class="language-plaintext highlighter-rouge">audio/ogg</code> untuk OGG</li>
+      <li><code class="language-plaintext highlighter-rouge">audio/wav</code> untuk WAV</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="atribut-tambahan">Atribut Tambahan:</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">autoplay</code>: Memutar audio otomatis saat halaman dimuat (sering diblokir browser).</li>
+  <li><code class="language-plaintext highlighter-rouge">loop</code>: Mengulang audio terus menerus.</li>
+  <li><code class="language-plaintext highlighter-rouge">muted</code>: Memulai audio dalam keadaan dibisukan.</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">preload</code>: Memberitahu browser apakah audio akan dimuat saat halaman dimuat.</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">auto</code>, <code class="language-plaintext highlighter-rouge">metadata</code>, atau <code class="language-plaintext highlighter-rouge">none</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="contoh">Contoh:</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span> <span class="na">preload=</span><span class="s">"auto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"lagu.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  Browser tidak mendukung tag audio.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="format-audio-yang-didukung">Format Audio yang Didukung</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Ekstensi</th>
+      <th>Type</th>
+      <th>Dukungan Browser</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MP3</td>
+      <td><code class="language-plaintext highlighter-rouge">.mp3</code></td>
+      <td>audio/mpeg</td>
+      <td>✅ Umum digunakan</td>
+    </tr>
+    <tr>
+      <td>OGG</td>
+      <td><code class="language-plaintext highlighter-rouge">.ogg</code></td>
+      <td>audio/ogg</td>
+      <td>✅ (terutama Firefox)</td>
+    </tr>
+    <tr>
+      <td>WAV</td>
+      <td><code class="language-plaintext highlighter-rouge">.wav</code></td>
+      <td>audio/wav</td>
+      <td>✅ (ukuran file besar)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Disarankan menyediakan beberapa format agar kompatibel di semua browser.</p>
+
+<h3 id="contoh-multi-format">Contoh Multi-Format:</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/file.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+  Browser tidak mendukung audio HTML5.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="fallback-text">Fallback Text</h2>
+
+<p>Teks di antara tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> akan ditampilkan jika browser tidak mendukung elemen tersebut. Ini penting sebagai antisipasi agar pengguna tetap tahu ada audio di halaman.</p>
+
+<hr />
+
+<h2 id="tips">Tips:</h2>
+
+<ul>
+  <li>Simpan file audio di folder khusus, misalnya <code class="language-plaintext highlighter-rouge">audio/</code>.</li>
+  <li>Gunakan format <code class="language-plaintext highlighter-rouge">.mp3</code> sebagai prioritas karena dukungan paling luas.</li>
+  <li>Jangan gunakan <code class="language-plaintext highlighter-rouge">autoplay</code> jika tidak penting — bisa mengganggu pengguna.</li>
+  <li>Gunakan <strong>file kecil</strong> untuk mempercepat loading halaman.</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Menambahkan audio di HTML sangat mudah menggunakan tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>. Dengan memberikan kontrol, format yang tepat, dan penanganan fallback yang baik, kamu bisa menciptakan pengalaman audio yang nyaman bagi pengunjung situs kamu.</p>
+
+<hr />
+
+
+</body>
+</html>

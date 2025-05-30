@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> SCSS dan SASS </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SCSS dan SASS | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SCSS dan SASS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang SCSS dan SASS" />
+<meta property="og:description" content="penjelasan tentang SCSS dan SASS" />
+<link rel="canonical" href="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-07T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SCSS dan SASS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+07:00","datePublished":"2025-05-07T00:00:00+07:00","description":"penjelasan tentang SCSS dan SASS","headline":"SCSS dan SASS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"},"url":"http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+     <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+    <h1>  SCSS dan SASS </h1>
+<p> 07 May 2025 - </p>
+
+<p>penjelasan tentang SCSS dan SASS</p>
+
+<p>SCSS dan SASS adalah <strong>preprocessor CSS</strong>—alat bantu yang memperluas fungsionalitas CSS dan membuat penulisan kode CSS lebih efisien, terstruktur, dan mudah dikelola. Keduanya merupakan bagian dari <strong>Sass (Syntactically Awesome Stylesheets)</strong>, tetapi memiliki perbedaan utama dalam <strong>sintaksis</strong>.</p>
+
+<hr />
+
+<h2 id="apa-itu-sass">Apa itu SASS?</h2>
+
+<p><strong>SASS</strong> adalah singkatan dari <strong>Syntactically Awesome Stylesheets</strong>. Ini adalah preprocessor CSS yang menyediakan fitur tambahan seperti:</p>
+
+<ul>
+  <li>Variabel</li>
+  <li>Nested rules (aturan bersarang)</li>
+  <li>Mixins</li>
+  <li>Inheritance</li>
+  <li>Modularisasi</li>
+</ul>
+
+<h3 id="contoh-sintaks-sass-indentasi-tanpa-tanda-kurung-atau-titik-koma">Contoh sintaks SASS (indentasi, tanpa tanda kurung atau titik koma):</h3>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span>
+
+<span class="nt">body</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span>
+
+<span class="nt">nav</span>
+  <span class="nt">ul</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nt">li</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="apa-itu-scss">Apa itu SCSS?</h2>
+
+<p><strong>SCSS</strong> adalah versi <strong>SASS</strong> yang lebih modern dan menggunakan sintaks seperti <strong>CSS biasa</strong>. Ini adalah bentuk <strong>superset dari CSS</strong>, artinya kode CSS yang valid juga merupakan kode SCSS yang valid.</p>
+
+<h3 id="contoh-sintaks-scss-menggunakan--dan--seperti-css">Contoh sintaks SCSS (menggunakan <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code> seperti CSS):</h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="kelebihan-scsssass-dibanding-css-biasa">Kelebihan SCSS/SASS dibanding CSS biasa:</h2>
+
+<ul>
+  <li><strong>Variabel</strong>: menyimpan warna, ukuran, dll.</li>
+  <li><strong>Nesting</strong>: menulis kode hierarki seperti struktur HTML.</li>
+  <li><strong>Partials &amp; Import</strong>: modularisasi file CSS.</li>
+  <li><strong>Mixins &amp; Functions</strong>: reusable styles dengan parameter.</li>
+  <li><strong>Inheritance (<code class="language-plaintext highlighter-rouge">@extend</code>)</strong>: berbagi style antar selector.</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<ul>
+  <li><strong>SASS</strong> dan <strong>SCSS</strong> adalah alat yang sama dengan dua sintaks berbeda.</li>
+  <li><strong>SCSS lebih populer</strong> karena sintaksnya mirip dengan CSS biasa.</li>
+  <li>Keduanya meningkatkan produktivitas dan manajemen proyek front-end.</li>
+</ul>
+
+
+</body>
+</html>
