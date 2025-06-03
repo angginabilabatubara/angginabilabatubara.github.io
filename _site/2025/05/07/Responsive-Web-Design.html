@@ -34,7 +34,16 @@
 
 </head>
 <body>
-     <nav>
+    
+    <div class="container   ">
+            <header>
+                <img src="/assets/images/anggii niee.jpeg" alt="profile picture"
+                class="profile-picture">
+                        <h1>Home</h1>
+                        <p></p>
+                    </header>
+                    <nav>
+                          <nav>
  
  <a href="/" >Home</a>
  
@@ -43,7 +52,10 @@
  <a href="/blog.html" >Blog</a>
  
  </nav> 
-    <h1>  Responsive Web Design </h1>
+                    </nav>
+                 
+                    <main>
+                         <h1>  Responsive Web Design </h1>
 <p> 07 May 2025 - </p>
 
 <p>Penjelasan tentang Responsive Web Design</p>
@@ -146,16 +158,16 @@
 <h3 id="css">CSS</h3>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
-  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">3</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
-  <span class="py">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="m">3fr</span> <span class="m">1fr</span><span class="p">;</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">/* Responsive untuk layar kecil */</span>
 <span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
   <span class="nt">body</span> <span class="p">{</span>
-    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+    <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="m">1fr</span><span class="p">;</span>
   <span class="p">}</span>
 
   <span class="nc">.sidebar</span> <span class="p">{</span>
@@ -197,5 +209,11 @@
 </blockquote>
 
 
+                    </main>
+
+                    <footer>
+                        <p>&copy; 2025 Home. All rights reserved.</p>
+                    </footer>
+            </div>
 </body>
 </html>
