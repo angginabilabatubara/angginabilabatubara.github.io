@@ -20,6 +20,12 @@ HTML menyediakan tag `<audio>` khusus untuk memutar file suara seperti musik, ef
 </audio>
 ```
 
+
+<audio controls>
+  <source src="/assets/Audio/intro.mp4" type="audio/mpeg">
+  Browser kamu tidak mendukung pemutar audio.
+</audio>
+
 ---
 
 ##  Penjelasan Atribut:

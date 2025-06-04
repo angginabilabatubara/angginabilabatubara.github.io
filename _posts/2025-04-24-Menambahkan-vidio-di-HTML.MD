@@ -19,6 +19,14 @@ HTML menyediakan elemen `<video>` untuk menyisipkan dan memutar video secara lan
 </video>
 ```
 
+## Contoh Video
+
+<video controls width="200">
+  <source src="/assets/vidio/rainass.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 
 ##  Penjelasan setiap bagian
 
@@ -76,5 +84,8 @@ Jika videonya berasal dari YouTube:
 * Format video yang paling umum dan didukung luas adalah `.mp4`
 * File video sebaiknya berada di folder proyek atau dihosting secara online
 * Gunakan lebih dari satu format (`.mp4`, `.webm`, dll) jika ingin kompatibilitas maksimal
+
+
+
 
  

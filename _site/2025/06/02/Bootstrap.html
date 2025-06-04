@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bootstrap </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Bootstrap | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Bootstrap" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang Bootstrap" />
+<meta property="og:description" content="penjelasan tentang Bootstrap" />
+<link rel="canonical" href="http://localhost:4000/2025/06/02/Bootstrap.html" />
+<meta property="og:url" content="http://localhost:4000/2025/06/02/Bootstrap.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-02T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bootstrap" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-02T00:00:00+07:00","datePublished":"2025-06-02T00:00:00+07:00","description":"penjelasan tentang Bootstrap","headline":"Bootstrap","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/06/02/Bootstrap.html"},"url":"http://localhost:4000/2025/06/02/Bootstrap.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    
+    <div class="container   ">
+            <header>
+                <img src="/assets/images/anggii niee.jpeg" alt="profile picture"
+                class="profile-picture">
+                        <h1>Home</h1>
+                        <p></p>
+                    </header>
+                    <nav>
+                          <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+                    </nav>
+                 
+                    <main>
+                         <h1>  Bootstrap </h1>
+<p> 02 Jun 2025 - </p>
+
+<p>penjelasan tentang Bootstrap</p>
+
+<h2 id="1-apa-itu-bootstrap"><strong>1. Apa Itu Bootstrap?</strong></h2>
+
+<p><strong>Bootstrap</strong> adalah framework <strong>HTML, CSS, dan JavaScript</strong> open-source yang digunakan untuk merancang tampilan dan komponen antarmuka pengguna (UI) yang <strong>resposif dan mobile-first</strong>.</p>
+
+<p>Dikembangkan oleh <strong>Twitter</strong> (oleh Mark Otto dan Jacob Thornton) dan pertama kali dirilis tahun 2011, Bootstrap kini telah mencapai versi 5.x dan digunakan oleh jutaan developer di seluruh dunia.</p>
+
+<h2 id="2-keunggulan-bootstrap"><strong>2. Keunggulan Bootstrap</strong></h2>
+
+<ul>
+  <li>✅ <strong>Mobile-First</strong>: Dirancang untuk tampil optimal di perangkat mobile.</li>
+  <li>✅ <strong>Responsif</strong>: Grid system fleksibel untuk tampilan multi-device.</li>
+  <li>✅ <strong>Cepat dan Efisien</strong>: Cukup pakai class tanpa harus tulis CSS dari nol.</li>
+  <li>✅ <strong>Konsistensi</strong>: Antarmuka yang seragam di berbagai browser.</li>
+  <li>✅ <strong>Komponen Lengkap</strong>: Tombol, navigasi, modal, form, alert, carousel, dan lainnya.</li>
+  <li>✅ <strong>Dokumentasi Lengkap</strong>: Bootstrap terkenal dengan dokumentasi yang jelas dan mudah dipahami.</li>
+</ul>
+
+<h2 id="3-cara-menggunakan-bootstrap"><strong>3. Cara Menggunakan Bootstrap</strong></h2>
+
+<h3 id="-a-menggunakan-cdn-cara-termudah">🔹 <strong>A. Menggunakan CDN (Cara Termudah)</strong></h3>
+
+<p>Tambahkan baris berikut ke dalam <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> dan sebelum penutup <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> di HTML kamu:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- CSS Bootstrap --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- JS Bootstrap Bundle (termasuk Popper.js) --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="-b-menginstal-via-npm-untuk-proyek-build-dengan-webpackgulpvite">🔹 <strong>B. Menginstal via NPM (untuk proyek build dengan Webpack/Gulp/Vite)</strong></h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>bootstrap
+</code></pre></div></div>
+
+<p>Lalu import di file JS atau SCSS kamu:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">'</span><span class="s1">bootstrap/dist/css/bootstrap.min.css</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">bootstrap/dist/js/bootstrap.bundle.min.js</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="4-komponen-penting-bootstrap"><strong>4. Komponen Penting Bootstrap</strong></h2>
+
+<p>Berikut beberapa <strong>komponen UI</strong> paling sering digunakan:</p>
+
+<h3 id="tombol"><strong>Tombol</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Tombol Utama<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Hapus<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<h3 id="navbar-navigasi"><strong>Navbar (Navigasi)</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg navbar-light bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logo<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<h3 id="card"><strong>Card</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">alt=</span><span class="s">"Gambar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Judul<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Isi konten kartu.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="formulir"><strong>Formulir</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<h3 id="alert"><strong>Alert</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  Data berhasil disimpan!
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="modal-pop-up-dialog"><strong>Modal (Pop-up Dialog)</strong></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Tombol --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#myModal"</span><span class="nt">&gt;</span>
+  Buka Modal
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Judul Modal<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        Isi konten modal.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="5-kesimpulan"><strong>5. Kesimpulan</strong></h2>
+
+<p>Bootstrap adalah framework front-end yang <strong>mudah, cepat, dan powerful</strong> untuk membuat website yang <strong>responsive dan modern</strong>. Dengan sistem grid, komponen siap pakai, serta utilitas lengkap, kamu bisa membangun antarmuka pengguna dalam waktu singkat dan hasil profesional.</p>
+
+
+                    </main>
+
+                    <footer>
+                        <p>&copy; 2025 Home. All rights reserved.</p>
+                    </footer>
+            </div>
+</body>
+</html>
