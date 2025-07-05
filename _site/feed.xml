@@ -1,4 +1,661 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-04T16:29:52+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">Bootstrap</title><link href="http://localhost:4000/2025/06/02/Bootstrap.html" rel="alternate" type="text/html" title="Bootstrap" /><published>2025-06-02T00:00:00+07:00</published><updated>2025-06-02T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/02/Bootstrap</id><content type="html" xml:base="http://localhost:4000/2025/06/02/Bootstrap.html"><![CDATA[<p>penjelasan tentang Bootstrap</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-02T12:36:15+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">PHP CRUD</title><link href="http://localhost:4000/2025/06/23/PHP-CRUD.html" rel="alternate" type="text/html" title="PHP CRUD" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/PHP-CRUD</id><content type="html" xml:base="http://localhost:4000/2025/06/23/PHP-CRUD.html"><![CDATA[<p>penjelasan tentang PHP CRUD</p>
+
+<h2 id="1-koneksiphp">1. Koneksi.php</h2>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$host</span> <span class="o">=</span> <span class="s1">'localhost'</span><span class="p">;</span>
+<span class="nv">$username</span> <span class="o">=</span> <span class="s1">'root'</span><span class="p">;</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+<span class="nv">$db_nama</span> <span class="o">=</span> <span class="s1">'pendaftaran'</span><span class="p">;</span>
+
+<span class="nv">$koneksi</span> <span class="o">=</span> <span class="nb">mysqli_connect</span><span class="p">(</span><span class="nv">$host</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$db_nama</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$koneksi</span><span class="p">){</span>
+    <span class="k">die</span><span class="p">(</span><span class="s2">"koneksi gagal:"</span><span class="mf">.</span> <span class="nf">mysqli_connect_error</span><span class="p">());</span>
+<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"koneksi database berhasil"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h3 id="penjelasan-dan-fungsi-kode"><strong>Penjelasan dan Fungsi Kode:</strong></h3>
+
+<h4 id="1-php">1. <code class="language-plaintext highlighter-rouge">&lt;?php</code></h4>
+
+<p>Menandakan bahwa kode setelah ini adalah kode PHP.</p>
+
+<hr />
+
+<h4 id="2-variabel-koneksi-database">2. Variabel Koneksi Database:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$host</span> <span class="o">=</span> <span class="s1">'localhost'</span><span class="p">;</span>
+<span class="nv">$username</span> <span class="o">=</span> <span class="s1">'root'</span><span class="p">;</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+<span class="nv">$db_nama</span> <span class="o">=</span> <span class="s1">'pendaftaran'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">localhost</code>: Nama host database. Umumnya <code class="language-plaintext highlighter-rouge">localhost</code> jika database ada di server yang sama.</li>
+  <li><code class="language-plaintext highlighter-rouge">root</code>: Username untuk login ke MySQL. Default-nya biasanya <code class="language-plaintext highlighter-rouge">root</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">''</code>: Password MySQL. Dikosongkan jika tidak ada password (sering terjadi di server lokal/XAMPP).</li>
+  <li><code class="language-plaintext highlighter-rouge">'pendaftaran'</code>: Nama database yang akan digunakan.</li>
+</ul>
+
+<hr />
+
+<h4 id="3-membuat-koneksi-ke-database">3. Membuat Koneksi ke Database:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$koneksi</span> <span class="o">=</span> <span class="nb">mysqli_connect</span><span class="p">(</span><span class="nv">$host</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$db_nama</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Fungsi <code class="language-plaintext highlighter-rouge">mysqli_connect()</code></strong>:
+Digunakan untuk membuat koneksi ke server MySQL. Jika berhasil, variabel <code class="language-plaintext highlighter-rouge">$koneksi</code> akan menyimpan koneksi tersebut.</p>
+
+<hr />
+
+<h4 id="4-mengecek-koneksi">4. Mengecek Koneksi:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$koneksi</span><span class="p">){</span>
+    <span class="k">die</span><span class="p">(</span><span class="s2">"koneksi gagal:"</span><span class="mf">.</span> <span class="nf">mysqli_connect_error</span><span class="p">());</span>
+<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"koneksi database berhasil"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">if (!$koneksi)</code>: Mengecek apakah koneksi gagal.</li>
+  <li><code class="language-plaintext highlighter-rouge">die("koneksi gagal:". mysqli_connect_error());</code>: Jika gagal, tampilkan pesan kesalahan dan hentikan program.</li>
+  <li><code class="language-plaintext highlighter-rouge">mysqli_connect_error()</code>: Fungsi yang menampilkan detail error dari koneksi.</li>
+  <li><code class="language-plaintext highlighter-rouge">else { echo "koneksi database berhasil"; }</code>: Jika koneksi berhasil, tampilkan pesan sukses.</li>
+</ul>
+
+<h2 id="2-indexphp">2. index.php</h2>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="s2">"
+&lt;h2&gt; pendaftaran siswa baru&lt;/h2&gt;
+
+&lt;h1&gt; digital talent&lt;/h1&gt;
+
+&lt;h3&gt;Menu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='from-daftar.php'&gt;Daftar Baru&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='list-siswa.php'&gt;Pendaftaran&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h4 id="penjelasan">Penjelasan</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;?php ... ?&gt;</code>: Menandakan bagian kode PHP.</li>
+  <li><code class="language-plaintext highlighter-rouge">echo "...";</code>: Menampilkan teks atau HTML ke browser.</li>
+  <li>
+    <p>Isi dari <code class="language-plaintext highlighter-rouge">echo</code> adalah <strong>HTML</strong> yang mencetak:</p>
+
+    <ul>
+      <li>Judul halaman: <strong>“pendaftaran siswa baru”</strong> dan <strong>“digital talent”</strong></li>
+      <li>Subjudul <strong>“Menu”</strong></li>
+      <li>
+        <p>Daftar menu:</p>
+
+        <ul>
+          <li><strong>Daftar Baru</strong> → tautan ke <code class="language-plaintext highlighter-rouge">from-daftar.php</code></li>
+          <li><strong>Pendaftaran</strong> → tautan ke <code class="language-plaintext highlighter-rouge">list-siswa.php</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="fungsinya">Fungsinya:</h4>
+
+<p>Untuk menampilkan <strong>navigasi/menu awal</strong> pada halaman pendaftaran siswa secara otomatis menggunakan PHP.</p>
+
+<h2 id="3-form-daftarphp">3. Form-daftar.php</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Form pendaftaran | Digital Talent&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Formulir Pendaftaran siswa baru&lt;/h2&gt;
+    &lt;form action="create.php" method="POST"&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Nama&lt;/td&gt;
+                &lt;td&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;input type="text" name="nama"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Alamat&lt;/td&gt;
+                &lt;td&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;textarea name="alamat"&gt;&lt;/textarea&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Jenis Kelamin&lt;/td&gt;
+                &lt;td&gt;:&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;input type="radio" name="jenis_kelamin" value="1"&gt; Laki-laki
+                    &lt;input type="radio" name="jenis_kelamin" value="0"&gt; Perempuan
+                &lt;/td&gt;
+
+                
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Agama&lt;/td&gt;
+                &lt;td&gt;:&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;select name="agama"&gt;
+                        &lt;option&gt;Islam&lt;/option&gt;
+                        &lt;option&gt;Kristen&lt;/option&gt;
+                        &lt;option&gt;Hindu&lt;/option&gt;
+                        &lt;option&gt;Budha&lt;/option&gt;
+                        &lt;option&gt;Konghucu&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sekolah Asal&lt;/td&gt;
+                &lt;td&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;input type="text" name="sekolah_asal"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="submit" value="Daftar"&gt;&lt;/td&gt;
+        &lt;/table&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<h3 id="penjelasan-1"><strong>Penjelasan</strong></h3>
+
+<h3 id="h2formulir-pendaftaran-siswa-baruh2"><code class="language-plaintext highlighter-rouge">&lt;h2&gt;Formulir Pendaftaran siswa baru&lt;/h2&gt;</code></h3>
+
+<p>Judul utama halaman.</p>
+
+<h3 id="form-actioncreatephp-methodpost"><code class="language-plaintext highlighter-rouge">&lt;form action="create.php" method="POST"&gt;</code></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">action="create.php"</code> → Ketika form disubmit, data dikirim ke file PHP <code class="language-plaintext highlighter-rouge">create.php</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">method="POST"</code> → Data dikirim secara <strong>tertutup</strong> (tidak terlihat di URL).</li>
+</ul>
+
+<h3 id="isi-formulir"><strong>Isi Formulir:</strong></h3>
+
+<h4 id="nama">Nama</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nama"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Input teks untuk nama siswa.</p>
+
+<h4 id="alamat">Alamat</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"alamat"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</code></pre></div></div>
+
+<p>Textarea untuk menulis alamat lengkap.</p>
+
+<h4 id="jenis-kelamin">Jenis Kelamin</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"jenis_kelamin"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span> Laki-laki
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"jenis_kelamin"</span> <span class="na">value=</span><span class="s">"0"</span><span class="nt">&gt;</span> Perempuan
+</code></pre></div></div>
+
+<p>Tombol pilihan (radio) antara <strong>Laki-laki</strong> dan <strong>Perempuan</strong>.</p>
+
+<h4 id="agama">Agama</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"agama"</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/select&gt;</span>
+</code></pre></div></div>
+
+<p>Dropdown menu untuk memilih agama. Pilihan: Islam, Kristen, Hindu, Budha, Konghucu.</p>
+
+<h4 id="sekolah-asal">Sekolah Asal</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"sekolah_asal"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Input teks untuk nama sekolah sebelumnya.</p>
+
+<h4 id="tombol-submit">Tombol Submit</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Daftar"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Tombol untuk mengirim form.</p>
+
+<h4 id="fungsinya-1">Fungsinya</h4>
+
+<p>Formulir ini digunakan untuk <strong>mendaftarkan siswa baru</strong>. Data akan dikirim ke <code class="language-plaintext highlighter-rouge">create.php</code> dan bisa disimpan ke database.</p>
+
+<h2 id="4-createphp">4. create.php</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+
+include "koneksi.php";
+
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
+$agama = $_POST['agama'];
+$sekolah_asal = $_POST['sekolah_asal'];
+
+$sql = " INSERT INTO siswa (nama, alamat, jenis_kelamin, agama, sekolah_asal)
+         VALUES ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$sekolah_asal')";
+
+ if (mysqli_query($koneksi, $sql)) {
+    header("location:list-siswa.php");
+ }  else {
+    echo "Error:" . $sql . "&lt;br&gt;" . mysqli_error($koneksi) ;
+ }  
+ 
+ ?&gt;
+</code></pre></div></div>
+<h4 id="ambil-data-dari-form">Ambil data dari form:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$nama</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'nama'</span><span class="p">];</span>
+<span class="nv">$alamat</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'alamat'</span><span class="p">];</span>
+<span class="nv">$jenis_kelamin</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'jenis_kelamin'</span><span class="p">];</span>
+<span class="nv">$agama</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'agama'</span><span class="p">];</span>
+<span class="nv">$sekolah_asal</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'sekolah_asal'</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p>Mengambil data yang dikirim dari form HTML dengan metode POST.</p>
+
+<h4 id="query-sql">Query SQL:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"INSERT INTO siswa (nama, alamat, jenis_kelamin, agama, sekolah_asal)
+        VALUES ('</span><span class="nv">$nama</span><span class="s2">', '</span><span class="nv">$alamat</span><span class="s2">', '</span><span class="nv">$jenis_kelamin</span><span class="s2">', '</span><span class="nv">$agama</span><span class="s2">', '</span><span class="nv">$sekolah_asal</span><span class="s2">')"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Membuat perintah SQL untuk <strong>menyimpan data ke tabel <code class="language-plaintext highlighter-rouge">siswa</code></strong>.</p>
+
+<h4 id="eksekusi-query">Eksekusi Query:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nf">mysqli_query</span><span class="p">(</span><span class="nv">$koneksi</span><span class="p">,</span> <span class="nv">$sql</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nb">header</span><span class="p">(</span><span class="s2">"location:list-siswa.php"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Jika berhasil disimpan, <strong>redirect ke halaman <code class="language-plaintext highlighter-rouge">list-siswa.php</code></strong>.</p>
+
+<h4 id="jika-gagal">Jika Gagal:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Error:"</span> <span class="mf">.</span> <span class="nv">$sql</span> <span class="mf">.</span> <span class="s2">"&lt;br&gt;"</span> <span class="mf">.</span> <span class="nf">mysqli_error</span><span class="p">(</span><span class="nv">$koneksi</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Menampilkan pesan error jika query gagal.</p>
+
+<h2 id="5list-siswaphp">5.list-siswa.php</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Daftar Siswa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Siswa yang sudah mendaftar&lt;/h2&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.php"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="from-daftar.php"&gt;[+] Tambah Baru&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;?php
+    include "koneksi.php";
+
+    $sql = "SELECT * FROM siswa";
+    $result = mysqli_query($koneksi, $sql);
+    ?&gt;
+
+    &lt;table border ="1"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;No&lt;/th&gt;
+                &lt;th&gt;Nama&lt;/th&gt;
+                &lt;th&gt;Alamat&lt;/th&gt;
+                &lt;th&gt;Jenis Kelamin&lt;/th&gt;
+                &lt;th&gt;Agama&lt;/th&gt;
+                &lt;th&gt;Sekolah Asal&lt;/th&gt;
+                &lt;th&gt;Tindakan&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;?php
+        $no = 1;
+        while ($row = mysqli_fetch_assoc($result)) {
+        ?&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;?php echo $no++; ?&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $row['nama']; ?&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $row['alamat']; ?&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;?php
+                    if ($row['jenis_kelamin'] == 1) {
+                        echo "Laki-laki";
+                    } else {
+                        echo "Perempuan";
+                    }
+                    ?&gt;
+                &lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $row['agama']; ?&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $row['sekolah_asal']; ?&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;a href="form-edit.php?id=&lt;?php echo $row['id']; ?&gt;"&gt;Edit&lt;/a&gt;
+                    &lt;a href="form-delete.php?id=&lt;?php echo $row['id']; ?&gt;"&gt;Delete&lt;/a&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;?php
+        }
+        ?&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<h4 id="header-html">Header HTML</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2&gt;</span>Siswa yang sudah mendaftar<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"index.php"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"from-daftar.php"</span><span class="nt">&gt;</span>[+] Tambah Baru<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Navigasi ke halaman utama dan form pendaftaran baru.</p>
+
+<h3 id="include-koneksiphp"><code class="language-plaintext highlighter-rouge">include "koneksi.php";</code></h3>
+
+<p>Menghubungkan ke database.</p>
+
+<h4 id="ambil-data-dari-tabel-siswa">Ambil Data dari Tabel <code class="language-plaintext highlighter-rouge">siswa</code></h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT * FROM siswa"</span><span class="p">;</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nf">mysqli_query</span><span class="p">(</span><span class="nv">$koneksi</span><span class="p">,</span> <span class="nv">$sql</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Mengambil semua data siswa dari database.</p>
+
+<h4 id="tampilkan-data-dalam-tabel-html">Tampilkan Data dalam Tabel HTML</h4>
+
+<p>Data siswa ditampilkan satu per satu menggunakan <code class="language-plaintext highlighter-rouge">while</code>, termasuk:</p>
+
+<ul>
+  <li>Nama</li>
+  <li>Alamat</li>
+  <li>Jenis Kelamin (1 = Laki-laki, 0 = Perempuan)</li>
+  <li>Agama</li>
+  <li>Sekolah Asal</li>
+  <li>Tombol <strong>Edit</strong> dan <strong>Delete</strong> berdasarkan <code class="language-plaintext highlighter-rouge">id</code>.</li>
+</ul>
+
+<h2 id="6-form-editphp">6. Form-edit.php</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Form Edit Siswa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;?php
+    include "koneksi.php";
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM siswa WHERE id=$id";
+    $result = mysqli_query($koneksi, $sql);
+    $row = mysqli_fetch_assoc($result);
+?&gt;
+
+&lt;h2&gt;Formulir Edit Siswa&lt;/h2&gt;
+&lt;form action="update.php" method="POST"&gt;
+    &lt;input type="hidden" name="id" value="&lt;?php echo $row['id'] ?&gt;"&gt;
+    Nama :
+    &lt;input type="text" name="nama" value="&lt;?php echo $row['nama'] ?&gt;"&gt; &lt;br/&gt;
+    Alamat :
+    &lt;textarea name="alamat"&gt;&lt;?php echo $row['alamat'] ?&gt;&lt;/textarea&gt; &lt;br/&gt;
+    Jenis Kelamin :
+    &lt;input type="radio" name="jenis_kelamin" value="1" &lt;?php if ($row['jenis_kelamin'] == 1) echo "checked" ?&gt;&gt; Laki-Laki
+    &lt;input type="radio" name="jenis_kelamin" value="0" &lt;?php if ($row['jenis_kelamin'] == 0) echo "checked" ?&gt;&gt; Perempuan &lt;br/&gt;
+    Agama :
+    &lt;select name="agama"&gt;
+        &lt;option&gt;--Pilih Agama--&lt;/option&gt;
+        &lt;option value="Islam" &lt;?php if ($row['agama'] == "Islam") echo "selected" ?&gt;&gt;Islam&lt;/option&gt;
+        &lt;option value="Kristen" &lt;?php if ($row['agama'] == "Kristen") echo "selected" ?&gt;&gt;Kristen&lt;/option&gt;
+        &lt;option value="Hindu" &lt;?php if ($row['agama'] == "Hindu") echo "selected" ?&gt;&gt;Hindu&lt;/option&gt;
+        &lt;option value="Budha" &lt;?php if ($row['agama'] == "Budha") echo "selected" ?&gt;&gt;Budha&lt;/option&gt;
+    &lt;/select&gt; &lt;br/&gt;
+    Sekolah Asal :
+    &lt;input type="text" name="sekolah_asal" value="&lt;?php echo $row['sekolah_asal'] ?&gt;"&gt; &lt;br/&gt;&lt;br/&gt;
+    &lt;button type="submit"&gt;Update&lt;/button&gt;
+    &lt;a href="list-siswa.php"&gt;Batal&lt;/a&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<h3 id="penjelasan-per-bagian">Penjelasan Per Bagian:</h3>
+
+<h4 id="1-include-koneksiphp">1. <code class="language-plaintext highlighter-rouge">include "koneksi.php";</code></h4>
+
+<p>Menghubungkan ke database.</p>
+
+<h4 id="2-ambil-data-berdasarkan-id">2. Ambil data berdasarkan ID:</h4>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'id'</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT * FROM siswa WHERE id=</span><span class="nv">$id</span><span class="s2">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Mengambil data siswa dengan ID tertentu dari database untuk diedit.</p>
+
+<h3 id="isi-form">Isi Form:</h3>
+
+<p>Form menampilkan data yang sudah ada, dan bisa diubah:</p>
+
+<ul>
+  <li><strong>Nama</strong> (input)</li>
+  <li><strong>Alamat</strong> (textarea)</li>
+  <li><strong>Jenis Kelamin</strong> (radio)</li>
+  <li><strong>Agama</strong> (dropdown)</li>
+  <li><strong>Sekolah Asal</strong> (input)</li>
+</ul>
+
+<p>Nilai-nilai sebelumnya otomatis <strong>diisi</strong> (prefilled) sesuai data yang diambil dari database.</p>
+
+<h3 id="saat-submit">saat Submit:</h3>
+
+<p>Form dikirim ke <code class="language-plaintext highlighter-rouge">update.php</code> untuk menyimpan perubahan.</p>
+
+<h3 id="kesimpulan">Kesimpulan:</h3>
+
+<p>Halaman ini digunakan untuk <strong>mengedit data siswa</strong>.
+Data diambil dari database lalu ditampilkan, dan setelah diubah akan dikirim ke <code class="language-plaintext highlighter-rouge">update.php</code> untuk diproses.</p>
+
+<h2 id="7-updatephp">7. update.php</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+
+include "koneksi.php";
+
+$id = $_POST['id'];
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
+$agama = $_POST['agama'];
+$sekolah_asal = $_POST['sekolah_asal'];
+
+$sql = "UPDATE siswa SET  nama='$nama',alamat='$alamat', jenis_kelamin='$jenis_kelamin', 
+        agama='$agama',sekolah_asal='$sekolah_asal' WHERE id=$id";
+
+if (mysqli_query($koneksi, $sql)) {
+    header("Location: list-siswa.php");
+} else {
+    echo "Error updating record: " . mysqli_error($koneksi);
+}
+
+?&gt;
+</code></pre></div></div>
+
+<h3 id="penjelasan-2">Penjelasan</h3>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">include "koneksi.php";</code>
+Menghubungkan ke database.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$_POST[...]</code>
+Mengambil data dari form edit.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">UPDATE siswa SET ... WHERE id=$id</code>
+Menyusun query untuk mengubah data siswa berdasarkan ID.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mysqli_query(...)</code>
+Menjalankan query ke database.</p>
+  </li>
+  <li>
+    <p>Jika berhasil → Redirect ke <code class="language-plaintext highlighter-rouge">list-siswa.php</code></p>
+  </li>
+  <li>
+    <p>Jika gagal → Tampilkan pesan error.</p>
+  </li>
+</ul>
+
+<h3 id="kesimpulan-1">Kesimpulan:</h3>
+
+<p>Kode ini digunakan untuk memperbarui data siswa di database berdasarkan input dari form edit.</p>
+
+<h2 id="8-form-deletephp">8. Form-delete.php</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;doctype html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+         &lt;meta charset="utf-8"&gt;
+         &lt;title&gt;Form Hapus Siswa&lt;/title&gt;
+    &lt;head&gt;
+    &lt;body&gt;
+
+    &lt;?php
+    include "koneksi.php";
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM siswa WHERE id=$id" ;
+    $result = mysqli_query($koneksi, $sql);
+    $row = mysqli_fetch_assoc($result);
+    ?&gt;
+
+    &lt;h2&gt;Apakah Anda Yakin akan menghapus data tersebut?&lt;/h2&gt;
+    &lt;form action= "delete.php" method="POST"&gt;
+    &lt;input type= "hidden"  name ="id" value="&lt;?php echo $row['id'] ?&gt;"&gt;
+    Nama : &lt;?php echo $row['nama'] ?&gt; &lt;br/&gt;
+    Jenis Kelamin :
+    &lt;?php
+    if ($row['jenis_kelamin']== 1){
+        echo "laki laki";
+    } else {
+        echo "perempuan";
+    }
+    ?&gt; &lt;br/&gt;
+    Agama : &lt;?php echo $row['agama'] ?&gt; &lt;br/&gt;
+    &lt;button type= "submit"&gt; Ya&lt;/button&gt;
+    &lt;a href="list-siswa.php"&gt;Tidak&lt;/a&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</code></pre></div></div>
+
+<h3 id="penjelasan-3">Penjelasan</h3>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">include "koneksi.php";</code>
+Menghubungkan ke database.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$id = $_GET['id'];</code>
+Mengambil ID siswa dari URL.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">SELECT * FROM siswa WHERE id=$id</code>
+Mengambil data siswa berdasarkan ID.</p>
+  </li>
+  <li>
+    <p>Menampilkan data: <strong>Nama</strong>, <strong>Jenis Kelamin</strong>, dan <strong>Agama</strong>.</p>
+  </li>
+  <li>
+    <p>Form kirim ke <code class="language-plaintext highlighter-rouge">delete.php</code> dengan metode <strong>POST</strong>, menyertakan <code class="language-plaintext highlighter-rouge">id</code> siswa.</p>
+  </li>
+</ul>
+
+<h3 id="pilihan-user">Pilihan User:</h3>
+
+<ul>
+  <li>Klik <strong>“Ya”</strong> → menghapus data (dikirim ke <code class="language-plaintext highlighter-rouge">delete.php</code>).</li>
+  <li>Klik <strong>“Tidak”</strong> → kembali ke <code class="language-plaintext highlighter-rouge">list-siswa.php</code>.</li>
+</ul>
+
+<h4 id="kesimpulan-2">Kesimpulan:</h4>
+
+<p>Form ini digunakan untuk mengkonfirmasi penghapusan siswa, menampilkan datanya, dan menunggu keputusan pengguna (hapus atau batal).</p>
+
+<h2 id="9deletephp">9.delete.php</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;?php
+
+include "koneksi.php";
+ 
+$id = $_POST['id'];
+
+$sql = "DELETE FROM siswa WHERE id=$id";
+
+ if (mysqli_query($koneksi, $sql)) {
+    header("Location: list-siswa.php");
+ }  else {
+    echo "Error deleting record:" . mysqli_error($koneksi) ;
+ }  
+ 
+ ?&gt;
+</code></pre></div></div>
+
+<h3 id="penjelasan-4">Penjelasan</h3>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">include "koneksi.php";</code>
+Menghubungkan ke database.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$id = $_POST['id'];</code>
+Mengambil <code class="language-plaintext highlighter-rouge">id</code> siswa dari form.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">DELETE FROM siswa WHERE id=$id</code>
+Menyusun query untuk menghapus siswa berdasarkan ID.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mysqli_query(...)</code>
+Menjalankan query ke database.</p>
+  </li>
+  <li>
+    <p>Jika berhasil → Dialihkan ke <code class="language-plaintext highlighter-rouge">list-siswa.php</code>.</p>
+  </li>
+  <li>
+    <p>Jika gagal → Tampilkan pesan error.</p>
+  </li>
+</ul>
+
+<h3 id="kesimpulan-3">Kesimpulan</h3>
+
+<p>Kode ini digunakan untuk mengeksekusi penghapusan data siswa dari tabel siswa secara permanen.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang PHP CRUD]]></summary></entry><entry><title type="html">Bootstrap</title><link href="http://localhost:4000/2025/06/02/Bootstrap.html" rel="alternate" type="text/html" title="Bootstrap" /><published>2025-06-02T00:00:00+07:00</published><updated>2025-06-02T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/02/Bootstrap</id><content type="html" xml:base="http://localhost:4000/2025/06/02/Bootstrap.html"><![CDATA[<p>penjelasan tentang Bootstrap</p>
 
 <h2 id="1-apa-itu-bootstrap"><strong>1. Apa Itu Bootstrap?</strong></h2>
 
@@ -1398,139 +2055,4 @@ function konfirmasiHapus() {
   <li>Format video yang paling umum dan didukung luas adalah <code class="language-plaintext highlighter-rouge">.mp4</code></li>
   <li>File video sebaiknya berada di folder proyek atau dihosting secara online</li>
   <li>Gunakan lebih dari satu format (<code class="language-plaintext highlighter-rouge">.mp4</code>, <code class="language-plaintext highlighter-rouge">.webm</code>, dll) jika ingin kompatibilitas maksimal</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang menambahkan vidio]]></summary></entry><entry><title type="html">Menambahkan Audio di HTML</title><link href="http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html" rel="alternate" type="text/html" title="Menambahkan Audio di HTML" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Menambahkan-Audio-di-HTML.html"><![CDATA[<p>Penjelasan tentang Menambahkan Audio di HTML</p>
-
-<h1 id="cara-menambahkan-audio-di-html">Cara Menambahkan Audio di HTML</h1>
-
-<h2 id="tag-audio">Tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code></h2>
-
-<p>HTML menyediakan tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> khusus untuk memutar file suara seperti musik, efek suara, atau rekaman suara. Dengan tag ini, kamu bisa menyisipkan file audio ke dalam halaman web dan memberi kontrol kepada pengguna seperti tombol play, pause, dll.</p>
-
-<h3 id="contoh-dasar">Contoh Dasar:</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/nama-file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
-  Browser kamu tidak mendukung pemutar audio.
-<span class="nt">&lt;/audio&gt;</span>
-</code></pre></div></div>
-
-<audio controls="">
-  <source src="/assets/Audio/intro.mp4" type="audio/mpeg" />
-  Browser kamu tidak mendukung pemutar audio.
-</audio>
-
-<hr />
-
-<h2 id="penjelasan-atribut">Penjelasan Atribut:</h2>
-
-<ul>
-  <li><strong><code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code></strong>: Tag utama untuk menampilkan pemutar audio.</li>
-  <li><strong><code class="language-plaintext highlighter-rouge">controls</code></strong>: Menampilkan kontrol standar (play, pause, volume).</li>
-  <li><strong><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code></strong>: Menunjukkan file audio yang ingin diputar.</li>
-  <li><strong><code class="language-plaintext highlighter-rouge">src</code></strong>: Lokasi file audio, bisa lokal atau URL.</li>
-  <li>
-    <p><strong><code class="language-plaintext highlighter-rouge">type</code></strong>: Tipe format file audio:</p>
-
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">audio/mpeg</code> untuk MP3</li>
-      <li><code class="language-plaintext highlighter-rouge">audio/ogg</code> untuk OGG</li>
-      <li><code class="language-plaintext highlighter-rouge">audio/wav</code> untuk WAV</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h2 id="atribut-tambahan">Atribut Tambahan:</h2>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">autoplay</code>: Memutar audio otomatis saat halaman dimuat (sering diblokir browser).</li>
-  <li><code class="language-plaintext highlighter-rouge">loop</code>: Mengulang audio terus menerus.</li>
-  <li><code class="language-plaintext highlighter-rouge">muted</code>: Memulai audio dalam keadaan dibisukan.</li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">preload</code>: Memberitahu browser apakah audio akan dimuat saat halaman dimuat.</p>
-
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">auto</code>, <code class="language-plaintext highlighter-rouge">metadata</code>, atau <code class="language-plaintext highlighter-rouge">none</code></li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="contoh">Contoh:</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span> <span class="na">preload=</span><span class="s">"auto"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"lagu.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
-  Browser tidak mendukung tag audio.
-<span class="nt">&lt;/audio&gt;</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="format-audio-yang-didukung">Format Audio yang Didukung</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Format</th>
-      <th>Ekstensi</th>
-      <th>Type</th>
-      <th>Dukungan Browser</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MP3</td>
-      <td><code class="language-plaintext highlighter-rouge">.mp3</code></td>
-      <td>audio/mpeg</td>
-      <td>✅ Umum digunakan</td>
-    </tr>
-    <tr>
-      <td>OGG</td>
-      <td><code class="language-plaintext highlighter-rouge">.ogg</code></td>
-      <td>audio/ogg</td>
-      <td>✅ (terutama Firefox)</td>
-    </tr>
-    <tr>
-      <td>WAV</td>
-      <td><code class="language-plaintext highlighter-rouge">.wav</code></td>
-      <td>audio/wav</td>
-      <td>✅ (ukuran file besar)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Disarankan menyediakan beberapa format agar kompatibel di semua browser.</p>
-
-<h3 id="contoh-multi-format">Contoh Multi-Format:</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/file.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
-  Browser tidak mendukung audio HTML5.
-<span class="nt">&lt;/audio&gt;</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="fallback-text">Fallback Text</h2>
-
-<p>Teks di antara tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> akan ditampilkan jika browser tidak mendukung elemen tersebut. Ini penting sebagai antisipasi agar pengguna tetap tahu ada audio di halaman.</p>
-
-<hr />
-
-<h2 id="tips">Tips:</h2>
-
-<ul>
-  <li>Simpan file audio di folder khusus, misalnya <code class="language-plaintext highlighter-rouge">audio/</code>.</li>
-  <li>Gunakan format <code class="language-plaintext highlighter-rouge">.mp3</code> sebagai prioritas karena dukungan paling luas.</li>
-  <li>Jangan gunakan <code class="language-plaintext highlighter-rouge">autoplay</code> jika tidak penting — bisa mengganggu pengguna.</li>
-  <li>Gunakan <strong>file kecil</strong> untuk mempercepat loading halaman.</li>
-</ul>
-
-<hr />
-
-<h2 id="kesimpulan">Kesimpulan</h2>
-
-<p>Menambahkan audio di HTML sangat mudah menggunakan tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>. Dengan memberikan kontrol, format yang tepat, dan penanganan fallback yang baik, kamu bisa menciptakan pengalaman audio yang nyaman bagi pengunjung situs kamu.</p>
-
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Menambahkan Audio di HTML]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang menambahkan vidio]]></summary></entry></feed>
