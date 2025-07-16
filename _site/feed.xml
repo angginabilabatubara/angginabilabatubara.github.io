@@ -1,4 +1,247 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-02T12:36:15+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">PHP CRUD</title><link href="http://localhost:4000/2025/06/23/PHP-CRUD.html" rel="alternate" type="text/html" title="PHP CRUD" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/PHP-CRUD</id><content type="html" xml:base="http://localhost:4000/2025/06/23/PHP-CRUD.html"><![CDATA[<p>penjelasan tentang PHP CRUD</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-16T23:45:30+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">Lavarel</title><link href="http://localhost:4000/2025/06/25/Laravel.html" rel="alternate" type="text/html" title="Lavarel" /><published>2025-06-25T00:00:00+07:00</published><updated>2025-06-25T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/25/Laravel</id><content type="html" xml:base="http://localhost:4000/2025/06/25/Laravel.html"><![CDATA[<p>Berikut penjelasan tentang Laravel :</p>
+
+<h2 id="tahap-awal-menggunakan-laravel">Tahap Awal Menggunakan Laravel</h2>
+
+<h2 id="apa-itu-laravel">Apa Itu Laravel?</h2>
+
+<p>Laravel adalah framework PHP berbasis MVC (Model-View-Controller)** yang paling populer saat ini. Framework ini dirancang untuk mempermudah pengembangan aplikasi web, mulai dari yang kecil hingga yang berskala besar. Laravel menyediakan banyak fitur bawaan yang sangat berguna, seperti routing, middleware, otentikasi, session management, cache, dan sebagainya.</p>
+
+<p>Laravel sangat cocok bagi pemula yang ingin belajar membuat aplikasi modern berbasis web karena dokumentasinya sangat jelas, komunitasnya besar, dan didukung oleh ekosistem yang kuat.</p>
+
+<h2 id="tahapan-awal-menggunakan-laravel">Tahapan Awal Menggunakan Laravel</h2>
+
+<h3 id="1-persiapan-awal-wajib-sebelum-mulai-laravel">1 Persiapan Awal (Wajib Sebelum Mulai Laravel)</h3>
+
+<p>Sebelum menginstal Laravel, kamu perlu menyiapkan beberapa hal:</p>
+
+<ul>
+  <li><strong>PHP</strong> (Disarankan versi 8.1 ke atas)</li>
+  <li><strong>Composer</strong> (Untuk manajemen package PHP)</li>
+  <li><strong>Database</strong> (Umumnya MySQL, PostgreSQL, SQL Server, dsb.)</li>
+  <li><strong>Web Server</strong> (XAMPP, Laragon, atau langsung pakai Laravel artisan serve)</li>
+</ul>
+
+<h3 id="2-menginstal-laravel">2 <strong>Menginstal Laravel</strong></h3>
+
+<h4 id="ada-2-cara-umum">Ada 2 cara umum:</h4>
+
+<p><strong>Cara 1: Menggunakan Composer</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel nama_project
+</code></pre></div></div>
+
+<p><strong>Cara 2: Laravel Installer (Opsional)</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require laravel/installer
+laravel new nama_project
+</code></pre></div></div>
+
+<p>Hasilnya, Laravel akan membuatkan sebuah project dengan struktur yang rapi dan lengkap.</p>
+
+<h3 id="3-mengenal-struktur-project-laravel-wajib-pemula-tahu">3. Mengenal Struktur Project Laravel (Wajib Pemula Tahu)**</h3>
+
+<p>Berikut beberapa folder penting yang sering digunakan:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Folder</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">app/</code></td>
+      <td>Berisi file controller, model, service, middleware, dsb.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">routes/web.php</code></td>
+      <td>Tempat mendefinisikan URL/route aplikasi web.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">resources/views/</code></td>
+      <td>Tempat file tampilan (.blade.php) untuk UI.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">database/migrations/</code></td>
+      <td>Tempat buat file migrasi tabel database.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.env</code></td>
+      <td>Pengaturan koneksi database, email, API key, dll.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">storage/</code></td>
+      <td>Untuk menyimpan file, cache, log.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">public/</code></td>
+      <td>Folder utama akses website (index.php, gambar, css, js).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="4-menjalankan-laravel-menampilkan-project-di-browser">4 <strong>Menjalankan Laravel (Menampilkan Project di Browser)</strong></h3>
+
+<p>Di terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan serve
+</code></pre></div></div>
+
+<p>Hasil:
+Buka <code class="language-plaintext highlighter-rouge">http://127.0.0.1:8000</code> di browser untuk melihat halaman awal Laravel.</p>
+
+<hr />
+
+<h3 id="5-tahap-penggunaan-laravel-dasar-sampai-lanjut">5 <strong>Tahap Penggunaan Laravel (Dasar Sampai Lanjut)</strong></h3>
+
+<h4 id="routing"><strong>Routing</strong></h4>
+
+<p>Semua route untuk web diletakkan di:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// routes/web.php</span>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/halo'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s1">'Halo Laravel!'</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="controller"><strong>Controller</strong></h4>
+
+<p>Buat Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MahasiswaController
+</code></pre></div></div>
+
+<p>Di Controller:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'mahasiswa.index'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="model"><strong>Model</strong></h4>
+
+<p>Buat Model:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model Mahasiswa
+</code></pre></div></div>
+
+<p>Model berguna untuk koneksi ke database (ORM: Eloquent).</p>
+
+<h4 id="migration-buat-tabel"><strong>Migration (Buat Tabel)</strong></h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:migration create_mahasiswa_table
+php artisan migrate
+</code></pre></div></div>
+
+<p>Migration digunakan untuk membuat struktur database lebih terkontrol.</p>
+
+<h4 id="view-blade"><strong>View (Blade)</strong></h4>
+
+<p>Laravel pakai Blade Template.
+Contoh file <code class="language-plaintext highlighter-rouge">resources/views/halo.blade.php</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Halo, Laravel!<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="contoh-alur-crud-laravel-singkat"><strong>Contoh Alur CRUD Laravel (Singkat)</strong></h2>
+
+<p>1 Buat Model, Migration, Controller sekaligus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model Post <span class="nt">-mcr</span>
+</code></pre></div></div>
+
+<p>2  Tambah route:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Route</span><span class="o">::</span><span class="nf">resource</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="nc">PostController</span><span class="o">::</span><span class="n">class</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>3 Jalankan migrasi database:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate
+</code></pre></div></div>
+<p>4 Buat tampilan di resources/views/posts/.</p>
+
+<hr />
+
+<h2 id="manfaat-menggunakan-laravel">Manfaat Menggunakan Laravel</h2>
+
+<p>Berikut beberapa <strong>manfaat Laravel</strong> dibanding framework PHP lain (atau vanilla PHP):</p>
+
+<h3 id="1-struktur-kode-lebih-teratur">1. Struktur Kode Lebih Teratur</h3>
+
+<p>Laravel memisahkan file sesuai fungsi: controller, model, view. Membuat proyek lebih mudah dipelihara.</p>
+
+<h3 id="2-fitur-keamanan-tinggi">2. Fitur Keamanan Tinggi</h3>
+
+<p>Laravel punya fitur bawaan:</p>
+
+<ul>
+  <li>CSRF Token</li>
+  <li>SQL Injection Protection</li>
+  <li>XSS Protection</li>
+  <li>Bcrypt/argon2 password hashing</li>
+  <li>Email Verification</li>
+  <li>2FA (Two Factor Authentication)</li>
+</ul>
+
+<h3 id="3-kemudahan-crud-dan-routing">3. Kemudahan CRUD dan Routing</h3>
+
+<p>Laravel memudahkan buat aplikasi CRUD yang kompleks dengan perintah artisan. Routing juga rapi dan fleksibel.</p>
+
+<h3 id="4-tersedia-otentikasi-bawaan">4. Tersedia Otentikasi Bawaan</h3>
+
+<p>Laravel Breeze, Jetstream, Fortify, dan Laravel UI menyediakan fitur register-login bawaan yang aman.</p>
+
+<h3 id="5-dokumentasi-resmi-sangat-lengkap">5. Dokumentasi Resmi Sangat Lengkap</h3>
+
+<p>Panduan dari Laravel sangat jelas bahkan untuk pemula.</p>
+
+<h3 id="6-komunitas-besar--ekosistem-kuat">6. Komunitas Besar &amp; Ekosistem Kuat</h3>
+
+<p>Banyak tersedia package tambahan: Spatie, Livewire, Inertia, Filament, dll.</p>
+
+<h3 id="7-artisan-cli-command-line-interface">7. Artisan CLI (Command Line Interface)</h3>
+
+<p>Perintah artisan mempermudah pembuatan file baru:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model
+php artisan make:controller
+php artisan make:migration
+php artisan route:list
+</code></pre></div></div>
+
+<h3 id="8-bisa-digunakan-untuk-project-skala-apapun">8. Bisa Digunakan untuk Project Skala Apapun</h3>
+
+<p>Dari website sederhana, aplikasi toko online, hingga sistem manajemen perusahaan (ERP) bisa dibangun dengan Laravel.</p>
+
+<h3 id="9-integrasi-mudah-dengan-api--layanan-pihak-ketiga">9. Integrasi Mudah dengan API &amp; Layanan Pihak Ketiga</h3>
+
+<p>Laravel mendukung integrasi dengan:</p>
+
+<ul>
+  <li>Payment Gateway (Midtrans, Stripe)</li>
+  <li>API (WhatsApp, SMS)</li>
+  <li>Firebase</li>
+  <li>Cloud Storage (S3, GCP, Azure)</li>
+</ul>
+
+<h3 id="10-lebih-cepat-saat-maintenance">10. Lebih Cepat Saat Maintenance</h3>
+
+<p>Kode lebih bersih, terstruktur, lebih cepat dipahami oleh developer lain saat project berpindah tangan.</p>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Laravel adalah framework PHP yang <strong>sangat cocok bagi pemula maupun profesional</strong> karena menyediakan:</p>
+
+<ul>
+  <li>Tools lengkap (Artisan, Eloquent, Blade)</li>
+  <li>Kemudahan pengelolaan data dan keamanan</li>
+  <li>Ekosistem luas (Breeze, Jetstream, Livewire, dll)</li>
+  <li>Cocok untuk pengembangan aplikasi modern berbasis web.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Berikut penjelasan tentang Laravel :]]></summary></entry><entry><title type="html">PHP CRUD</title><link href="http://localhost:4000/2025/06/23/PHP-CRUD.html" rel="alternate" type="text/html" title="PHP CRUD" /><published>2025-06-23T00:00:00+07:00</published><updated>2025-06-23T00:00:00+07:00</updated><id>http://localhost:4000/2025/06/23/PHP-CRUD</id><content type="html" xml:base="http://localhost:4000/2025/06/23/PHP-CRUD.html"><![CDATA[<p>penjelasan tentang PHP CRUD</p>
 
 <h2 id="1-koneksiphp">1. Koneksi.php</h2>
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
@@ -1545,7 +1788,84 @@ function konfirmasiHapus() {
 
 <p>Terdapat dua versi utama: SweetAlert (v1) dan SweetAlert2 (v2), di mana SweetAlert2 menjadi pilihan yang lebih unggul karena dukungan terhadap input form, kontrol tombol lebih fleksibel, animasi yang halus, serta dokumentasi yang lebih lengkap. SweetAlert2 juga sangat mudah diintegrasikan dengan berbagai framework modern seperti jQuery, React, dan Laravel.</p>
 
-<p>Penggunaan SweetAlert tidak hanya meningkatkan estetika halaman web, tetapi juga meningkatkan user experience (UX)** secara keseluruhan. Namun, penting untuk menggunakannya secara bijak agar tidak membanjiri pengguna dengan terlalu banyak popup.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang SweetAlert]]></summary></entry><entry><title type="html">Responsive Web Design</title><link href="http://localhost:4000/2025/05/07/Responsive-Web-Design.html" rel="alternate" type="text/html" title="Responsive Web Design" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/Responsive-%20Web-Design</id><content type="html" xml:base="http://localhost:4000/2025/05/07/Responsive-Web-Design.html"><![CDATA[<p>Penjelasan tentang Responsive Web Design</p>
+<p>Penggunaan SweetAlert tidak hanya meningkatkan estetika halaman web, tetapi juga meningkatkan user experience (UX)** secara keseluruhan. Namun, penting untuk menggunakannya secara bijak agar tidak membanjiri pengguna dengan terlalu banyak popup.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang SweetAlert]]></summary></entry><entry><title type="html">SCSS dan SASS</title><link href="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" rel="alternate" type="text/html" title="SCSS dan SASS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SCSS-dan-SASS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"><![CDATA[<p>penjelasan tentang SCSS dan SASS</p>
+
+<p>SCSS dan SASS adalah <strong>preprocessor CSS</strong>—alat bantu yang memperluas fungsionalitas CSS dan membuat penulisan kode CSS lebih efisien, terstruktur, dan mudah dikelola. Keduanya merupakan bagian dari <strong>Sass (Syntactically Awesome Stylesheets)</strong>, tetapi memiliki perbedaan utama dalam <strong>sintaksis</strong>.</p>
+
+<hr />
+
+<h2 id="apa-itu-sass">Apa itu SASS?</h2>
+
+<p><strong>SASS</strong> adalah singkatan dari <strong>Syntactically Awesome Stylesheets</strong>. Ini adalah preprocessor CSS yang menyediakan fitur tambahan seperti:</p>
+
+<ul>
+  <li>Variabel</li>
+  <li>Nested rules (aturan bersarang)</li>
+  <li>Mixins</li>
+  <li>Inheritance</li>
+  <li>Modularisasi</li>
+</ul>
+
+<h3 id="contoh-sintaks-sass-indentasi-tanpa-tanda-kurung-atau-titik-koma">Contoh sintaks SASS (indentasi, tanpa tanda kurung atau titik koma):</h3>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span>
+
+<span class="nt">body</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span>
+
+<span class="nt">nav</span>
+  <span class="nt">ul</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nt">li</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="apa-itu-scss">Apa itu SCSS?</h2>
+
+<p><strong>SCSS</strong> adalah versi <strong>SASS</strong> yang lebih modern dan menggunakan sintaks seperti <strong>CSS biasa</strong>. Ini adalah bentuk <strong>superset dari CSS</strong>, artinya kode CSS yang valid juga merupakan kode SCSS yang valid.</p>
+
+<h3 id="contoh-sintaks-scss-menggunakan--dan--seperti-css">Contoh sintaks SCSS (menggunakan <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code> seperti CSS):</h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="kelebihan-scsssass-dibanding-css-biasa">Kelebihan SCSS/SASS dibanding CSS biasa:</h2>
+
+<ul>
+  <li><strong>Variabel</strong>: menyimpan warna, ukuran, dll.</li>
+  <li><strong>Nesting</strong>: menulis kode hierarki seperti struktur HTML.</li>
+  <li><strong>Partials &amp; Import</strong>: modularisasi file CSS.</li>
+  <li><strong>Mixins &amp; Functions</strong>: reusable styles dengan parameter.</li>
+  <li><strong>Inheritance (<code class="language-plaintext highlighter-rouge">@extend</code>)</strong>: berbagi style antar selector.</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<ul>
+  <li><strong>SASS</strong> dan <strong>SCSS</strong> adalah alat yang sama dengan dua sintaks berbeda.</li>
+  <li><strong>SCSS lebih populer</strong> karena sintaksnya mirip dengan CSS biasa.</li>
+  <li>Keduanya meningkatkan produktivitas dan manajemen proyek front-end.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang SCSS dan SASS]]></summary></entry><entry><title type="html">Responsive Web Design</title><link href="http://localhost:4000/2025/05/07/Responsive-Web-Design.html" rel="alternate" type="text/html" title="Responsive Web Design" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/Responsive-%20Web-Design</id><content type="html" xml:base="http://localhost:4000/2025/05/07/Responsive-Web-Design.html"><![CDATA[<p>Penjelasan tentang Responsive Web Design</p>
 
 <h2 id="apa-itu-responsive-web-design">Apa itu RESPONSIVE WEB DESIGN?</h2>
 
@@ -1693,84 +2013,7 @@ function konfirmasiHapus() {
 
 <blockquote>
   <p>Dengan menggunakan <strong>fluid layout</strong>, <strong>media queries</strong>, <strong>flexible images</strong>, dan <strong>viewport tag</strong>, kamu bisa membangun website yang <strong>adaptif dan profesional</strong>.</p>
-</blockquote>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Responsive Web Design]]></summary></entry><entry><title type="html">SCSS dan SASS</title><link href="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html" rel="alternate" type="text/html" title="SCSS dan SASS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SCSS-dan-SASS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SCSS-dan-SASS.html"><![CDATA[<p>penjelasan tentang SCSS dan SASS</p>
-
-<p>SCSS dan SASS adalah <strong>preprocessor CSS</strong>—alat bantu yang memperluas fungsionalitas CSS dan membuat penulisan kode CSS lebih efisien, terstruktur, dan mudah dikelola. Keduanya merupakan bagian dari <strong>Sass (Syntactically Awesome Stylesheets)</strong>, tetapi memiliki perbedaan utama dalam <strong>sintaksis</strong>.</p>
-
-<hr />
-
-<h2 id="apa-itu-sass">Apa itu SASS?</h2>
-
-<p><strong>SASS</strong> adalah singkatan dari <strong>Syntactically Awesome Stylesheets</strong>. Ini adalah preprocessor CSS yang menyediakan fitur tambahan seperti:</p>
-
-<ul>
-  <li>Variabel</li>
-  <li>Nested rules (aturan bersarang)</li>
-  <li>Mixins</li>
-  <li>Inheritance</li>
-  <li>Modularisasi</li>
-</ul>
-
-<h3 id="contoh-sintaks-sass-indentasi-tanpa-tanda-kurung-atau-titik-koma">Contoh sintaks SASS (indentasi, tanpa tanda kurung atau titik koma):</h3>
-
-<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span>
-
-<span class="nt">body</span>
-  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span>
-
-<span class="nt">nav</span>
-  <span class="nt">ul</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
-  <span class="nt">li</span>
-    <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="apa-itu-scss">Apa itu SCSS?</h2>
-
-<p><strong>SCSS</strong> adalah versi <strong>SASS</strong> yang lebih modern dan menggunakan sintaks seperti <strong>CSS biasa</strong>. Ini adalah bentuk <strong>superset dari CSS</strong>, artinya kode CSS yang valid juga merupakan kode SCSS yang valid.</p>
-
-<h3 id="contoh-sintaks-scss-menggunakan--dan--seperti-css">Contoh sintaks SCSS (menggunakan <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code> seperti CSS):</h3>
-
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
-
-<span class="nt">body</span> <span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">nav</span> <span class="p">{</span>
-  <span class="nt">ul</span> <span class="p">{</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="nt">li</span> <span class="p">{</span>
-    <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="kelebihan-scsssass-dibanding-css-biasa">Kelebihan SCSS/SASS dibanding CSS biasa:</h2>
-
-<ul>
-  <li><strong>Variabel</strong>: menyimpan warna, ukuran, dll.</li>
-  <li><strong>Nesting</strong>: menulis kode hierarki seperti struktur HTML.</li>
-  <li><strong>Partials &amp; Import</strong>: modularisasi file CSS.</li>
-  <li><strong>Mixins &amp; Functions</strong>: reusable styles dengan parameter.</li>
-  <li><strong>Inheritance (<code class="language-plaintext highlighter-rouge">@extend</code>)</strong>: berbagi style antar selector.</li>
-</ul>
-
-<hr />
-
-<h2 id="kesimpulan">Kesimpulan</h2>
-
-<ul>
-  <li><strong>SASS</strong> dan <strong>SCSS</strong> adalah alat yang sama dengan dua sintaks berbeda.</li>
-  <li><strong>SCSS lebih populer</strong> karena sintaksnya mirip dengan CSS biasa.</li>
-  <li>Keduanya meningkatkan produktivitas dan manajemen proyek front-end.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang SCSS dan SASS]]></summary></entry><entry><title type="html">Plugin dalam pengembangan web</title><link href="http://localhost:4000/2025/04/24/Plugin-dalam-pengembangan-Web.html" rel="alternate" type="text/html" title="Plugin dalam pengembangan web" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugin-%20dalam-pengembangan-Web</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugin-dalam-pengembangan-Web.html"><![CDATA[<p>penjelasan tentang plugin dalam pengembangan web</p>
+</blockquote>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Responsive Web Design]]></summary></entry><entry><title type="html">Plugin dalam pengembangan web</title><link href="http://localhost:4000/2025/04/24/Plugin-dalam-pengembangan-Web.html" rel="alternate" type="text/html" title="Plugin dalam pengembangan web" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugin-%20dalam-pengembangan-Web</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugin-dalam-pengembangan-Web.html"><![CDATA[<p>penjelasan tentang plugin dalam pengembangan web</p>
 
 <h2 id="apa-itu-plugin-dalam-pengembangan-web">Apa itu plugin dalam pengembangan web?</h2>
 
@@ -1933,126 +2176,4 @@ function konfirmasiHapus() {
   <li><strong>Plugin adalah ekstensi</strong> yang menambah fungsionalitas ke sistem web (CMS, framework, browser, dll).</li>
   <li><strong>Digunakan untuk menghemat waktu dan meningkatkan kemampuan</strong> aplikasi tanpa harus membuat fitur dari awal.</li>
   <li><strong>Wajib dikelola dengan baik</strong>, agar tidak menimbulkan masalah performa atau keamanan.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang plugin dalam pengembangan web]]></summary></entry><entry><title type="html">Menambahkan vidio di HTML</title><link href="http://localhost:4000/2025/04/24/Menambahkan-vidio-di-HTML.html" rel="alternate" type="text/html" title="Menambahkan vidio di HTML" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Menambahkan-vidio-di-HTML</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Menambahkan-vidio-di-HTML.html"><![CDATA[<p>Penjelasan tentang menambahkan vidio</p>
-
-<h2 id="cara-menambahkan-video-di-html">Cara menambahkan video di HTML</h2>
-
-<p>HTML menyediakan elemen <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> untuk menyisipkan dan memutar video secara langsung di halaman web.</p>
-
-<h3 id="struktur-dasar">Struktur Dasar:</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
-  Your browser does not support the video tag.
-<span class="nt">&lt;/video&gt;</span>
-</code></pre></div></div>
-
-<h2 id="contoh-video">Contoh Video</h2>
-
-<video controls="" width="200">
-  <source src="/assets/vidio/rainass.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-<h2 id="penjelasan-setiap-bagian">Penjelasan setiap bagian</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Bagian</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;video&gt;</code></td>
-      <td>Elemen utama untuk memutar video</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">controls</code></td>
-      <td>Menampilkan kontrol play, pause, volume, dll</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code></td>
-      <td>Menentukan file video dan formatnya</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>Memberitahu browser format file video (misal: <code class="language-plaintext highlighter-rouge">video/mp4</code>)</td>
-    </tr>
-    <tr>
-      <td>Teks fallback</td>
-      <td>Akan muncul jika browser tidak mendukung video</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="atribut-penting-lainnya">Atribut penting lainnya</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Atribut</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">controls</code></td>
-      <td>Menampilkan tombol play/pause, dll</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">autoplay</code></td>
-      <td>Video akan langsung diputar saat halaman dibuka</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">loop</code></td>
-      <td>Video akan mengulang terus-menerus</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">muted</code></td>
-      <td>Video dimulai dalam keadaan tanpa suara</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">poster="gambar.jpg"</code></td>
-      <td>Gambar thumbnail sebelum video diputar</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">width="600"</code></td>
-      <td>Menentukan lebar video (dalam piksel)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="contoh-lengkap">contoh lengkap:</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">"600"</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span> <span class="na">poster=</span><span class="s">"thumbnail.jpg"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video-keren.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video-keren.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;</span>
-  Browser Anda tidak mendukung pemutar video HTML5.
-<span class="nt">&lt;/video&gt;</span>
-</code></pre></div></div>
-
-<h2 id="menyematkan-video-dari-youtube-embed">Menyematkan Video dari Youtube (Embed)</h2>
-
-<p>Jika videonya berasal dari YouTube:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"560"</span> <span class="na">height=</span><span class="s">"315"</span> 
-  <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/VIDEO_ID"</span> 
-  <span class="na">title=</span><span class="s">"YouTube video player"</span> 
-  <span class="na">frameborder=</span><span class="s">"0"</span> 
-  <span class="na">allowfullscreen</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/iframe&gt;</span>
-</code></pre></div></div>
-
-<blockquote>
-  <p>Gantilah <code class="language-plaintext highlighter-rouge">VIDEO_ID</code> dengan ID video asli dari YouTube (misalnya: <code class="language-plaintext highlighter-rouge">dQw4w9WgXcQ</code>).</p>
-</blockquote>
-
-<h2 id="catatan">Catatan</h2>
-
-<ul>
-  <li>Format video yang paling umum dan didukung luas adalah <code class="language-plaintext highlighter-rouge">.mp4</code></li>
-  <li>File video sebaiknya berada di folder proyek atau dihosting secara online</li>
-  <li>Gunakan lebih dari satu format (<code class="language-plaintext highlighter-rouge">.mp4</code>, <code class="language-plaintext highlighter-rouge">.webm</code>, dll) jika ingin kompatibilitas maksimal</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang menambahkan vidio]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang plugin dalam pengembangan web]]></summary></entry></feed>

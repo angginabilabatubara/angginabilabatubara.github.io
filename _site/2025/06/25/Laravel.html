@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavarel </title>
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScript-->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!--plugins-->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lavarel | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Lavarel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Berikut penjelasan tentang Laravel :" />
+<meta property="og:description" content="Berikut penjelasan tentang Laravel :" />
+<link rel="canonical" href="http://localhost:4000/2025/06/25/Laravel.html" />
+<meta property="og:url" content="http://localhost:4000/2025/06/25/Laravel.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-25T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lavarel" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-25T00:00:00+07:00","datePublished":"2025-06-25T00:00:00+07:00","description":"Berikut penjelasan tentang Laravel :","headline":"Lavarel","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/06/25/Laravel.html"},"url":"http://localhost:4000/2025/06/25/Laravel.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    
+    <div class="container   ">
+            <header>
+                <img src="/assets/images/anggii niee.jpeg" alt="profile picture"
+                class="profile-picture">
+                        <h1>Home</h1>
+                        <p></p>
+                    </header>
+                    <nav>
+                          <nav>
+ 
+ <a href="/" >Home</a>
+ 
+ <a href="/friends.html" >Friends</a>
+ 
+ <a href="/blog.html" >Blog</a>
+ 
+ </nav> 
+                    </nav>
+                 
+                    <main>
+                         <h1> Lavarel </h1>
+<p> 25 Jun 2025 - </p>
+
+<p>Berikut penjelasan tentang Laravel :</p>
+
+<h2 id="tahap-awal-menggunakan-laravel">Tahap Awal Menggunakan Laravel</h2>
+
+<h2 id="apa-itu-laravel">Apa Itu Laravel?</h2>
+
+<p>Laravel adalah framework PHP berbasis MVC (Model-View-Controller)** yang paling populer saat ini. Framework ini dirancang untuk mempermudah pengembangan aplikasi web, mulai dari yang kecil hingga yang berskala besar. Laravel menyediakan banyak fitur bawaan yang sangat berguna, seperti routing, middleware, otentikasi, session management, cache, dan sebagainya.</p>
+
+<p>Laravel sangat cocok bagi pemula yang ingin belajar membuat aplikasi modern berbasis web karena dokumentasinya sangat jelas, komunitasnya besar, dan didukung oleh ekosistem yang kuat.</p>
+
+<h2 id="tahapan-awal-menggunakan-laravel">Tahapan Awal Menggunakan Laravel</h2>
+
+<h3 id="1-persiapan-awal-wajib-sebelum-mulai-laravel">1 Persiapan Awal (Wajib Sebelum Mulai Laravel)</h3>
+
+<p>Sebelum menginstal Laravel, kamu perlu menyiapkan beberapa hal:</p>
+
+<ul>
+  <li><strong>PHP</strong> (Disarankan versi 8.1 ke atas)</li>
+  <li><strong>Composer</strong> (Untuk manajemen package PHP)</li>
+  <li><strong>Database</strong> (Umumnya MySQL, PostgreSQL, SQL Server, dsb.)</li>
+  <li><strong>Web Server</strong> (XAMPP, Laragon, atau langsung pakai Laravel artisan serve)</li>
+</ul>
+
+<h3 id="2-menginstal-laravel">2 <strong>Menginstal Laravel</strong></h3>
+
+<h4 id="ada-2-cara-umum">Ada 2 cara umum:</h4>
+
+<p><strong>Cara 1: Menggunakan Composer</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel nama_project
+</code></pre></div></div>
+
+<p><strong>Cara 2: Laravel Installer (Opsional)</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require laravel/installer
+laravel new nama_project
+</code></pre></div></div>
+
+<p>Hasilnya, Laravel akan membuatkan sebuah project dengan struktur yang rapi dan lengkap.</p>
+
+<h3 id="3-mengenal-struktur-project-laravel-wajib-pemula-tahu">3. Mengenal Struktur Project Laravel (Wajib Pemula Tahu)**</h3>
+
+<p>Berikut beberapa folder penting yang sering digunakan:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Folder</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">app/</code></td>
+      <td>Berisi file controller, model, service, middleware, dsb.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">routes/web.php</code></td>
+      <td>Tempat mendefinisikan URL/route aplikasi web.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">resources/views/</code></td>
+      <td>Tempat file tampilan (.blade.php) untuk UI.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">database/migrations/</code></td>
+      <td>Tempat buat file migrasi tabel database.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">.env</code></td>
+      <td>Pengaturan koneksi database, email, API key, dll.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">storage/</code></td>
+      <td>Untuk menyimpan file, cache, log.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">public/</code></td>
+      <td>Folder utama akses website (index.php, gambar, css, js).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="4-menjalankan-laravel-menampilkan-project-di-browser">4 <strong>Menjalankan Laravel (Menampilkan Project di Browser)</strong></h3>
+
+<p>Di terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan serve
+</code></pre></div></div>
+
+<p>Hasil:
+Buka <code class="language-plaintext highlighter-rouge">http://127.0.0.1:8000</code> di browser untuk melihat halaman awal Laravel.</p>
+
+<hr />
+
+<h3 id="5-tahap-penggunaan-laravel-dasar-sampai-lanjut">5 <strong>Tahap Penggunaan Laravel (Dasar Sampai Lanjut)</strong></h3>
+
+<h4 id="routing"><strong>Routing</strong></h4>
+
+<p>Semua route untuk web diletakkan di:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// routes/web.php</span>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/halo'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s1">'Halo Laravel!'</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="controller"><strong>Controller</strong></h4>
+
+<p>Buat Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MahasiswaController
+</code></pre></div></div>
+
+<p>Di Controller:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'mahasiswa.index'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="model"><strong>Model</strong></h4>
+
+<p>Buat Model:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model Mahasiswa
+</code></pre></div></div>
+
+<p>Model berguna untuk koneksi ke database (ORM: Eloquent).</p>
+
+<h4 id="migration-buat-tabel"><strong>Migration (Buat Tabel)</strong></h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:migration create_mahasiswa_table
+php artisan migrate
+</code></pre></div></div>
+
+<p>Migration digunakan untuk membuat struktur database lebih terkontrol.</p>
+
+<h4 id="view-blade"><strong>View (Blade)</strong></h4>
+
+<p>Laravel pakai Blade Template.
+Contoh file <code class="language-plaintext highlighter-rouge">resources/views/halo.blade.php</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Halo, Laravel!<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="contoh-alur-crud-laravel-singkat"><strong>Contoh Alur CRUD Laravel (Singkat)</strong></h2>
+
+<p>1 Buat Model, Migration, Controller sekaligus:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model Post <span class="nt">-mcr</span>
+</code></pre></div></div>
+
+<p>2  Tambah route:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Route</span><span class="o">::</span><span class="nf">resource</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="nc">PostController</span><span class="o">::</span><span class="n">class</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>3 Jalankan migrasi database:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate
+</code></pre></div></div>
+<p>4 Buat tampilan di resources/views/posts/.</p>
+
+<hr />
+
+<h2 id="manfaat-menggunakan-laravel">Manfaat Menggunakan Laravel</h2>
+
+<p>Berikut beberapa <strong>manfaat Laravel</strong> dibanding framework PHP lain (atau vanilla PHP):</p>
+
+<h3 id="1-struktur-kode-lebih-teratur">1. Struktur Kode Lebih Teratur</h3>
+
+<p>Laravel memisahkan file sesuai fungsi: controller, model, view. Membuat proyek lebih mudah dipelihara.</p>
+
+<h3 id="2-fitur-keamanan-tinggi">2. Fitur Keamanan Tinggi</h3>
+
+<p>Laravel punya fitur bawaan:</p>
+
+<ul>
+  <li>CSRF Token</li>
+  <li>SQL Injection Protection</li>
+  <li>XSS Protection</li>
+  <li>Bcrypt/argon2 password hashing</li>
+  <li>Email Verification</li>
+  <li>2FA (Two Factor Authentication)</li>
+</ul>
+
+<h3 id="3-kemudahan-crud-dan-routing">3. Kemudahan CRUD dan Routing</h3>
+
+<p>Laravel memudahkan buat aplikasi CRUD yang kompleks dengan perintah artisan. Routing juga rapi dan fleksibel.</p>
+
+<h3 id="4-tersedia-otentikasi-bawaan">4. Tersedia Otentikasi Bawaan</h3>
+
+<p>Laravel Breeze, Jetstream, Fortify, dan Laravel UI menyediakan fitur register-login bawaan yang aman.</p>
+
+<h3 id="5-dokumentasi-resmi-sangat-lengkap">5. Dokumentasi Resmi Sangat Lengkap</h3>
+
+<p>Panduan dari Laravel sangat jelas bahkan untuk pemula.</p>
+
+<h3 id="6-komunitas-besar--ekosistem-kuat">6. Komunitas Besar &amp; Ekosistem Kuat</h3>
+
+<p>Banyak tersedia package tambahan: Spatie, Livewire, Inertia, Filament, dll.</p>
+
+<h3 id="7-artisan-cli-command-line-interface">7. Artisan CLI (Command Line Interface)</h3>
+
+<p>Perintah artisan mempermudah pembuatan file baru:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model
+php artisan make:controller
+php artisan make:migration
+php artisan route:list
+</code></pre></div></div>
+
+<h3 id="8-bisa-digunakan-untuk-project-skala-apapun">8. Bisa Digunakan untuk Project Skala Apapun</h3>
+
+<p>Dari website sederhana, aplikasi toko online, hingga sistem manajemen perusahaan (ERP) bisa dibangun dengan Laravel.</p>
+
+<h3 id="9-integrasi-mudah-dengan-api--layanan-pihak-ketiga">9. Integrasi Mudah dengan API &amp; Layanan Pihak Ketiga</h3>
+
+<p>Laravel mendukung integrasi dengan:</p>
+
+<ul>
+  <li>Payment Gateway (Midtrans, Stripe)</li>
+  <li>API (WhatsApp, SMS)</li>
+  <li>Firebase</li>
+  <li>Cloud Storage (S3, GCP, Azure)</li>
+</ul>
+
+<h3 id="10-lebih-cepat-saat-maintenance">10. Lebih Cepat Saat Maintenance</h3>
+
+<p>Kode lebih bersih, terstruktur, lebih cepat dipahami oleh developer lain saat project berpindah tangan.</p>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Laravel adalah framework PHP yang <strong>sangat cocok bagi pemula maupun profesional</strong> karena menyediakan:</p>
+
+<ul>
+  <li>Tools lengkap (Artisan, Eloquent, Blade)</li>
+  <li>Kemudahan pengelolaan data dan keamanan</li>
+  <li>Ekosistem luas (Breeze, Jetstream, Livewire, dll)</li>
+  <li>Cocok untuk pengembangan aplikasi modern berbasis web.</li>
+</ul>
+
+
+                    </main>
+
+                    <footer>
+                        <p>&copy; 2025 Home. All rights reserved.</p>
+                    </footer>
+            </div>
+</body>
+</html>
